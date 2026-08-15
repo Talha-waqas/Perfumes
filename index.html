@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume Daddy | Premium Fragrances</title>
+  <meta name="description" content="Discover premium perfumes, attars, deodorants, and home fragrances. Enjoy free delivery on orders above Rs. 20,000.">
+  
+  <!-- Typography: Cormorant Garamond for luxury serif, Outfit for display/headings, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span>Enjoy Free Delivery on Orders Above Rs. 20,000 – Shop Now!</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      
+      <!-- Mobile Menu Trigger -->
+      <button class="mobile-menu-trigger" aria-label="Toggle Menu" id="menuBtn">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Logo -->
+      <a href="/" class="logo-link" aria-label="Perfume Daddy Home">
+        <div class="logo-wrapper">
+          <!-- Stylized Avatar Icon (Circle + Hipster Character) -->
+          <svg class="logo-avatar" viewBox="0 0 100 100" width="42" height="42">
+            <circle cx="50" cy="50" r="48" fill="#7A0099" />
+            <!-- Cap -->
+            <path d="M30 42 C 40 32, 60 32, 70 42 L 75 42 L 75 46 L 25 46 Z" fill="#ffffff" />
+            <!-- Glasses -->
+            <circle cx="42" cy="52" r="8" stroke="#ffffff" stroke-width="3" fill="none" />
+            <circle cx="58" cy="52" r="8" stroke="#ffffff" stroke-width="3" fill="none" />
+            <line x1="50" y1="52" x2="50" y2="52" stroke="#ffffff" stroke-width="3" />
+            <!-- Beard & Face -->
+            <path d="M32 58 C 32 78, 68 78, 68 58 C 68 62, 32 62, 32 58 Z" fill="#ffffff" />
+            <!-- Mustache -->
+            <path d="M40 60 Q 50 56 60 60 Q 50 64 40 60 Z" fill="#2d2d2d" />
+          </svg>
+          <div class="logo-text-group">
+            <span class="logo-subtitle">perfume</span>
+            <span class="logo-title">daddy</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="/perfumes" class="nav-link">
+              Perfumes
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <!-- Premium Dropdown Menu -->
+            <div class="dropdown-panel">
+              <div class="dropdown-grid">
+                <div class="dropdown-column">
+                  <h3>By Concentration</h3>
+                  <ul>
+                    <li><a href="/eau-de-parfum">Eau de Parfum (EDP)</a></li>
+                    <li><a href="/eau-de-toilette">Eau de Toilette (EDT)</a></li>
+                    <li><a href="/eau-de-cologne">Eau de Cologne (EDC)</a></li>
+                    <li><a href="/parfum-extraits">Parfum Extraits</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-column">
+                  <h3>By Scent Profile</h3>
+                  <ul>
+                    <li><a href="/woody">Woody & Earthy</a></li>
+                    <li><a href="/citrus">Fresh & Citrusy</a></li>
+                    <li><a href="/oriental">Warm & Spicy</a></li>
+                    <li><a href="/floral">Floral & Sweet</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-column">
+                  <h3>Trending</h3>
+                  <ul>
+                    <li><a href="/new-arrivals">New Arrivals</a></li>
+                    <li><a href="/best-sellers">Best Sellers</a></li>
+                    <li><a href="/exclusive">Exclusive Blends</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a href="/attar" class="nav-link">Attar</a>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a href="/deodorant" class="nav-link">
+              Deodorant
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel mini-dropdown">
+              <ul>
+                <li><a href="/deodorant-men">For Men</a></li>
+                <li><a href="/deodorant-women">For Women</a></li>
+                <li><a href="/deodorant-unisex">Unisex</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a href="/gift-set" class="nav-link">Gift Set</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="/miniature" class="nav-link">Miniature</a>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a href="/home-fragrance" class="nav-link">
+              Home Fragrance
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel mini-dropdown">
+              <ul>
+                <li><a href="/reed-diffusers">Reed Diffusers</a></li>
+                <li><a href="/room-sprays">Room Sprays</a></li>
+                <li><a href="/essential-oils">Essential Oils</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a href="/scented-candles" class="nav-link">Scented Candles</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="/brands" class="nav-link">Brands</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Utility Icons -->
+      <div class="header-utilities">
+        <button class="utility-btn" id="searchBtn" aria-label="Search Catalog">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        
+        <a href="/account" class="utility-btn" aria-label="My Account">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        
+        <button class="utility-btn cart-btn" id="cartBtn" aria-label="Shopping Cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Interactive Slide-out Search Panel -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <div class="search-box">
+        <svg class="search-box-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="Search for perfumes, brands, notes..." aria-label="Search" id="searchInput">
+        <button class="search-close-btn" id="closeSearchBtn" aria-label="Close Search">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="search-suggestions">
+        <p class="suggestion-title">Popular Searches</p>
+        <div class="suggestion-tags">
+          <a href="/search?q=oud" class="tag">Oud Perfumes</a>
+          <a href="/search?q=musk" class="tag">Musk Attar</a>
+          <a href="/search?q=french" class="tag">French Fragrances</a>
+          <a href="/search?q=gift" class="tag">Gift Boxes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h2>Your Bag</h2>
+        <button class="cart-close-btn" id="closeCartBtn" aria-label="Close Cart">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="cart-drawer-body">
+        <!-- Empty Cart State -->
+        <div class="empty-cart-state">
+          <svg viewBox="0 0 24 24" width="48" height="48" stroke="#ccc" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <p>Your bag is empty.</p>
+          <a href="/collections" class="btn-primary">Browse Perfumes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <span class="mobile-logo-text">perfume daddy</span>
+        <button class="mobile-close-btn" id="closeMenuBtn" aria-label="Close Menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-body">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="/perfumes" class="mobile-nav-link">Perfumes</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="/attar" class="mobile-nav-link">Attar</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="/deodorant" class="mobile-nav-link">Deodorant</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="/gift-set" class="mobile-nav-link">Gift Set</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="/miniature" class="mobile-nav-link">Miniature</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="/home-fragrance" class="mobile-nav-link">Home Fragrance</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="/scented-candles" class="mobile-nav-link">Scented Candles</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="/brands" class="mobile-nav-link">Brands</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <main class="page-content">
+    <section class="luxury-hero">
+      <div class="hero-watermark">ELIXIR</div>
+      <div class="hero-bg-glow"></div>
+      <div class="hero-grid-container">
+        
+        <!-- Left Column: Visual Showcase -->
+        <div class="hero-visual-column">
+          <div class="product-frame">
+            <img src="assets/images/hero_perfumes.jpg" alt="Premium luxury perfume bottles showcase: Orchidée Nuit, Noir Ambre, and Santal Lumière on slate pedestals" class="hero-product-img" loading="eager" fetchpriority="high" width="1600" height="900">
+            <div class="frame-ambient-shadow"></div>
+            <div class="frame-tag">Collection Privée</div>
+          </div>
+        </div>
+
+        <!-- Right Column: Editorial Copy -->
+        <div class="hero-text-column">
+          <span class="hero-supheading">Elixirs of Distinction</span>
+          <h1 class="hero-heading">
+            <span class="serif-title">Best Selling <span class="gold-spark">✦</span></span>
+            <span class="sans-title">Scents</span>
+          </h1>
+          <p class="hero-description">
+            Experience our most desired fragrances. Artfully blended by master perfumers to capture the invisible signature of your soul.
+          </p>
+          <div class="hero-cta-group">
+            <a href="/shop" class="btn-luxury-primary">
+              Start Shopping
+              <svg class="cta-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="/discovery-set" class="btn-luxury-secondary">Order Discovery Set</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tilted Ribbon Marquee -->
+    <div class="tilted-ticker-wrapper">
+      <div class="tilted-ticker-bar">
+        <div class="ticker-track">
+          <div class="ticker-content">
+            <span>The invisible signature of your soul</span>
+            <span class="ticker-divider">✦</span>
+            <span>A scent is not just worn — it's remembered</span>
+            <span class="ticker-divider">✦</span>
+            <span>Fragrance speaks what words cannot express</span>
+            <span class="ticker-divider">✦</span>
+            <span>The invisible signature of your soul</span>
+            <span class="ticker-divider">✦</span>
+            <span>A scent is not just worn — it's remembered</span>
+            <span class="ticker-divider">✦</span>
+            <span>Fragrance speaks what words cannot express</span>
+            <span class="ticker-divider">✦</span>
+          </div>
+          <div class="ticker-content" aria-hidden="true">
+            <span>The invisible signature of your soul</span>
+            <span class="ticker-divider">✦</span>
+            <span>A scent is not just worn — it's remembered</span>
+            <span class="ticker-divider">✦</span>
+            <span>Fragrance speaks what words cannot express</span>
+            <span class="ticker-divider">✦</span>
+            <span>The invisible signature of your soul</span>
+            <span class="ticker-divider">✦</span>
+            <span>A scent is not just worn — it's remembered</span>
+            <span class="ticker-divider">✦</span>
+            <span>Fragrance speaks what words cannot express</span>
+            <span class="ticker-divider">✦</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Best Sellers Section -->
+    <section class="best-sellers-section">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="header-title-wrapper">
+            <span class="section-supheading">Curated Favorites</span>
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="title-accent-bar"></div>
+          </div>
+          <a href="/collections/best-sellers" class="btn-view-all">
+            View All Collection
+            <svg class="view-all-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          
+          <!-- Card 1: Creed Aventus -->
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-badge sale">Sale</span>
+              <img src="assets/images/best_sellers.jpg" alt="Creed Aventus Eau De Parfum For Men 100ml" class="product-img img-pos-1">
+              <button class="btn-quick-add" aria-label="Add Creed Aventus to Bag">Add to Bag</button>
+            </div>
+            <div class="product-info">
+              <div class="brand-row">
+                <span class="brand-name">Creed</span>
+                <span class="discount-tag">-3%</span>
+              </div>
+              <h3 class="product-title"><a href="/products/creed-aventus">CREED Aventus Eau De Parfum For Men 100ml</a></h3>
+              <div class="price-row">
+                <span class="price-original">Rs. 135,000</span>
+                <span class="price-current">Rs. 130,900</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Lattafa Angham -->
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-badge sale">Sale</span>
+              <img src="assets/images/best_sellers.jpg" alt="Lattafa Angham Eau De Parfum Unisex 100ml" class="product-img img-pos-2">
+              <button class="btn-quick-add" aria-label="Add Lattafa Angham to Bag">Add to Bag</button>
+            </div>
+            <div class="product-info">
+              <div class="brand-row">
+                <span class="brand-name">Lattafa Perfumes</span>
+                <span class="discount-tag">-26%</span>
+              </div>
+              <h3 class="product-title"><a href="/products/lattafa-angham">Lattafa Angham Eau De Parfum Unisex 100ml</a></h3>
+              <div class="price-row">
+                <span class="price-original">Rs. 9,180</span>
+                <span class="price-current">Rs. 6,820</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Rasasi Hawas Ice -->
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <img src="assets/images/best_sellers.jpg" alt="Rasasi Hawas Ice Eau De Parfum For Men 100ml" class="product-img img-pos-3">
+              <button class="btn-quick-add" aria-label="Add Rasasi Hawas Ice to Bag">Add to Bag</button>
+            </div>
+            <div class="product-info">
+              <div class="brand-row">
+                <span class="brand-name">Rasasi</span>
+              </div>
+              <h3 class="product-title"><a href="/products/rasasi-hawas-ice">Rasasi Hawas Ice Eau De Parfum For Men 100ml</a></h3>
+              <div class="price-row">
+                <span class="price-current font-highlight">Rs. 15,620</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Lattafa Asad -->
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-badge sold-out">Sold out</span>
+              <img src="assets/images/best_sellers.jpg" alt="Lattafa Asad Eau De Parfum For Men 100ml" class="product-img img-pos-4">
+              <button class="btn-quick-add disabled" disabled aria-label="Lattafa Asad Sold Out">Sold Out</button>
+            </div>
+            <div class="product-info">
+              <div class="brand-row">
+                <span class="brand-name">Lattafa Perfumes</span>
+              </div>
+              <h3 class="product-title"><a href="/products/lattafa-asad">Lattafa Asad Eau De Parfum For Men 100ml</a></h3>
+              <div class="price-row">
+                <span class="price-original">Rs. 8,850</span>
+                <span class="price-current">Rs. 7,670</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury Promotional Campaigns Section -->
+    <section class="promo-campaigns-section">
+      <div class="promo-container">
+        
+        <!-- Row 1 Banners -->
+        <div class="promo-row-top">
+          
+          <!-- Card 1: Lattafa Promo -->
+          <div class="promo-card lattafa-card">
+            <div class="promo-image-container">
+              <img src="assets/images/promo_lattafa.jpg" alt="Lattafa Khamrah Luxury Perfumes" class="promo-img">
+            </div>
+            <div class="promo-overlay">
+              <div class="promo-text-group">
+                <span class="promo-brand">Lattafa</span>
+                <span class="promo-label">Upto</span>
+                <h3 class="promo-discount">45% Off</h3>
+              </div>
+              <a href="/collections/lattafa" class="btn-promo-luxury">Explore Collection</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Armaf Club de Nuit Promo -->
+          <div class="promo-card armaf-card">
+            <div class="promo-image-container">
+              <img src="assets/images/promo_club_de_nuit.jpg" alt="Club de Nuit Intense Man" class="promo-img">
+            </div>
+            <div class="promo-overlay">
+              <div class="promo-text-group">
+                <span class="promo-brand">Armaf</span>
+                <span class="promo-tagline">Club De Nuit Series</span>
+                <h3 class="promo-discount-small">Special Offer</h3>
+              </div>
+              <a href="/collections/armaf" class="btn-promo-luxury-circle" aria-label="Explore Armaf">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2 Banners (Full Width Afnan) -->
+        <div class="promo-row-bottom">
+          
+          <!-- Card 3: Afnan Promo -->
+          <div class="promo-card afnan-card">
+            <div class="promo-image-container">
+              <img src="assets/images/promo_afnan.jpg" alt="Afnan 9PM and Supremacy Perfumes" class="promo-img">
+            </div>
+            <div class="promo-overlay horizontal-overlay">
+              <div class="promo-text-group">
+                <span class="promo-brand-display">Afnan Perfumes</span>
+                <span class="promo-label">Upto</span>
+                <h3 class="promo-discount">27% Off</h3>
+              </div>
+              <a href="/collections/afnan" class="btn-promo-luxury">Discover Afnan</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Luxury Shop by Category Section -->
+    <section class="category-selection-section">
+      <div class="category-container">
+        
+        <!-- Section Header -->
+        <div class="category-section-header">
+          <span class="category-supheading">Discover Scent Families</span>
+          <h2 class="category-title">Shop by Category</h2>
+          <div class="title-accent-bar"></div>
+        </div>
+
+        <!-- Categories Grid -->
+        <div class="category-grid">
+          
+          <!-- Category 1: Men -->
+          <a href="/collections/men" class="category-card">
+            <div class="category-circle-wrapper">
+              <div class="category-circle">
+                <img src="assets/images/categories.jpg" alt="Men's Fragrances Category" class="category-img pos-men">
+                <div class="category-overlay">
+                  <span class="category-initial">M</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="category-name">Men</h3>
+            <span class="category-link">
+              View Collection
+              <svg class="cat-link-arrow" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <!-- Category 2: Women -->
+          <a href="/collections/women" class="category-card">
+            <div class="category-circle-wrapper">
+              <div class="category-circle">
+                <img src="assets/images/categories.jpg" alt="Women's Fragrances Category" class="category-img pos-women">
+                <div class="category-overlay">
+                  <span class="category-initial">W</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="category-name">Women</h3>
+            <span class="category-link">
+              View Collection
+              <svg class="cat-link-arrow" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <!-- Category 3: Unisex -->
+          <a href="/collections/unisex" class="category-card">
+            <div class="category-circle-wrapper">
+              <div class="category-circle">
+                <img src="assets/images/categories.jpg" alt="Unisex Fragrances Category" class="category-img pos-unisex">
+                <div class="category-overlay">
+                  <span class="category-initial">U</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="category-name">Unisex</h3>
+            <span class="category-link">
+              View Collection
+              <svg class="cat-link-arrow" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <!-- Category 4: Attar -->
+          <a href="/collections/attar" class="category-card">
+            <div class="category-circle-wrapper">
+              <div class="category-circle">
+                <img src="assets/images/categories.jpg" alt="Attars Category" class="category-img pos-attar">
+                <div class="category-overlay">
+                  <span class="category-initial">A</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="category-name">Attar</h3>
+            <span class="category-link">
+              View Collection
+              <svg class="cat-link-arrow" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <!-- Category 5: Deo -->
+          <a href="/collections/deo" class="category-card">
+            <div class="category-circle-wrapper">
+              <div class="category-circle">
+                <img src="assets/images/categories.jpg" alt="Deodorants Category" class="category-img pos-deo">
+                <div class="category-overlay">
+                  <span class="category-initial">D</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="category-name">Deo</h3>
+            <span class="category-link">
+              View Collection
+              <svg class="cat-link-arrow" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Luxury The Hot List Tabs Section -->
+    <section class="hot-list-section">
+      <div class="section-container">
+        
+        <!-- Section Header with Tabs -->
+        <div class="hot-list-header">
+          <div class="hot-list-title-group">
+            <span class="hot-list-supheading">Trending Releases</span>
+            <h2 class="hot-list-title">The Hot List</h2>
+          </div>
+          
+          <!-- Category Tabs -->
+          <div class="hot-list-tabs" role="tablist" aria-label="Fragrance Collections">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="men-panel" id="tab-men">Men's Perfume</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="women-panel" id="tab-women">Women's Perfume</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="body-sprays-panel" id="tab-sprays">Body Sprays</button>
+          </div>
+
+          <a href="/collections/hot-list" class="btn-view-all-light">
+            View All
+            <svg class="view-all-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="title-accent-bar-left"></div>
+
+        <!-- Hot List Men Grid (Active by default) -->
+        <div class="hot-list-grid active" id="men-panel" role="tabpanel" aria-labelledby="tab-men">
+          
+          <!-- Card 1: Creed Aventus -->
+          <div class="hot-card">
+            <div class="hot-image-wrapper">
+              <span class="hot-badge sale">Sale</span>
+              <img src="assets/images/hot_list.jpg" alt="Creed Aventus" class="hot-img hot-pos-1">
+              <button class="btn-quick-add-dark" aria-label="Add Creed Aventus to Bag">Add to Bag</button>
+            </div>
+            <div class="hot-info">
+              <div class="hot-brand-row">
+                <span class="hot-brand">Creed</span>
+                <span class="hot-discount">-3%</span>
+              </div>
+              <h3 class="hot-card-title"><a href="/products/creed-aventus">CREED Aventus Eau De Parfum For Men 100ml</a></h3>
+              <div class="hot-price-row">
+                <span class="hot-price-original">Rs. 135,000</span>
+                <span class="hot-price-current">Rs. 130,900</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Dior Sauvage -->
+          <div class="hot-card">
+            <div class="hot-image-wrapper">
+              <span class="hot-badge sale">Sale</span>
+              <img src="assets/images/hot_list.jpg" alt="Dior Sauvage" class="hot-img hot-pos-2">
+              <button class="btn-quick-add-dark" aria-label="Add Dior Sauvage to Bag">Add to Bag</button>
+            </div>
+            <div class="hot-info">
+              <div class="hot-brand-row">
+                <span class="hot-brand">Dior</span>
+                <span class="hot-discount">-19%</span>
+              </div>
+              <h3 class="hot-card-title"><a href="/products/dior-sauvage">Dior Sauvage Parfum For Men 100ml</a></h3>
+              <div class="hot-price-row">
+                <span class="hot-price-original">Rs. 66,970</span>
+                <span class="hot-price-current">Rs. 54,100</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Versace Eros -->
+          <div class="hot-card">
+            <div class="hot-image-wrapper">
+              <span class="hot-badge sale">Sale</span>
+              <img src="assets/images/hot_list.jpg" alt="Versace Eros" class="hot-img hot-pos-3">
+              <button class="btn-quick-add-dark" aria-label="Add Versace Eros to Bag">Add to Bag</button>
+            </div>
+            <div class="hot-info">
+              <div class="hot-brand-row">
+                <span class="hot-brand">Versace</span>
+                <span class="hot-discount">-20%</span>
+              </div>
+              <h3 class="hot-card-title"><a href="/products/versace-eros">Versace Eros Eau De Parfum For Men 100ml</a></h3>
+              <div class="hot-price-row">
+                <span class="hot-price-original">Rs. 32,530</span>
+                <span class="hot-price-current">Rs. 26,030</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Bleu de Chanel -->
+          <div class="hot-card">
+            <div class="hot-image-wrapper">
+              <span class="hot-badge sale">Sale</span>
+              <img src="assets/images/hot_list.jpg" alt="Bleu de Chanel" class="hot-img hot-pos-4">
+              <button class="btn-quick-add-dark" aria-label="Add Bleu de Chanel to Bag">Add to Bag</button>
+            </div>
+            <div class="hot-info">
+              <div class="hot-brand-row">
+                <span class="hot-brand">Chanel</span>
+                <span class="hot-discount">-3%</span>
+              </div>
+              <h3 class="hot-card-title"><a href="/products/bleu-de-chanel">Chanel Bleu De Chanel Eau De Parfum For Men 100ml</a></h3>
+              <div class="hot-price-row">
+                <span class="hot-price-original">Rs. 66,350</span>
+                <span class="hot-price-current">Rs. 64,500</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Luxury Floating CTA Banner Section -->
+    <section class="luxury-cta-banner-section">
+      <div class="cta-banner-container">
+        <div class="cta-banner-glow"></div>
+        <div class="cta-banner-content">
+          <h2 class="cta-banner-heading">
+            The Fragrances <span class="cta-serif-italic">Everyone's</span> Talking About.
+          </h2>
+          <a href="/collections/trending" class="btn-cta-luxury-pill">
+            Explore Now
+            <svg class="cta-pill-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury Top-Selling Luxury Perfumes Section -->
+    <section class="top-selling-section">
+      <div class="section-container">
+        
+        <!-- Center Section Header -->
+        <div class="top-selling-header">
+          <div class="top-selling-icon-wrap">
+            <!-- Stylized Brand Crown / Seal Icon -->
+            <svg viewBox="0 0 100 100" width="30" height="30" fill="currentColor" class="brand-seal-icon">
+              <path d="M50 15 L 63 42 L 92 42 L 68 59 L 77 87 L 50 70 L 23 87 L 32 59 L 8 42 L 37 42 Z" fill="#7A0099" />
+            </svg>
+          </div>
+          <span class="top-selling-supheading">Signature Selection</span>
+          <h2 class="top-selling-title">Top-Selling Luxury Perfumes</h2>
+          <p class="top-selling-subtitle">
+            Crafted for elegance and lasting impressions — explore premium scents that redefine luxury and leave a mark wherever you go.
+          </p>
+          <div class="title-accent-bar-center"></div>
+        </div>
+
+        <!-- Top Selling Grid -->
+        <div class="top-selling-grid">
+          
+          <!-- Card 1: Lattafa Yara -->
+          <div class="top-card">
+            <div class="top-card-inner">
+              <div class="top-badge-wrapper">
+                <span class="top-rect-badge">Best Prices</span>
+              </div>
+              <a href="/products/lattafa-yara" class="top-arrow-btn" aria-label="View Lattafa Yara">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <div class="top-image-arch">
+                <img src="assets/images/top_selling.jpg" alt="Lattafa Yara" class="top-img pos-yara">
+              </div>
+              <div class="top-card-info">
+                <span class="top-perfume-name">Lattafa Yara</span>
+                <span class="top-perfume-price">Rs. 5,500</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Creed Aventus -->
+          <div class="top-card">
+            <div class="top-card-inner">
+              <div class="top-badge-wrapper">
+                <span class="top-rect-badge">Free Delivery</span>
+              </div>
+              <a href="/products/creed-aventus" class="top-arrow-btn" aria-label="View Creed Aventus">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <div class="top-image-arch">
+                <img src="assets/images/top_selling.jpg" alt="Creed Aventus" class="top-img pos-aventus">
+              </div>
+              <div class="top-card-info">
+                <span class="top-perfume-name">CREED Aventus</span>
+                <span class="top-perfume-price">Rs. 105,000</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Rayhaan Kiss -->
+          <div class="top-card">
+            <div class="top-card-inner">
+              <div class="top-badge-wrapper">
+                <span class="top-rect-badge">Best Selling</span>
+              </div>
+              <a href="/products/rayhaan-kiss" class="top-arrow-btn" aria-label="View Rayhaan Kiss">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <div class="top-image-arch">
+                <img src="assets/images/top_selling.jpg" alt="Rayhaan Kiss" class="top-img pos-kiss">
+              </div>
+              <div class="top-card-info">
+                <span class="top-perfume-name">Rayhaan Kiss</span>
+                <span class="top-perfume-price">Rs. 8,500</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Afnan Supremacy -->
+          <div class="top-card">
+            <div class="top-card-inner">
+              <div class="top-badge-wrapper">
+                <span class="top-rect-badge">Collector's Edition</span>
+              </div>
+              <a href="/products/afnan-supremacy" class="top-arrow-btn" aria-label="View Afnan Supremacy">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <div class="top-image-arch">
+                <img src="assets/images/top_selling.jpg" alt="Afnan Supremacy" class="top-img pos-supremacy">
+              </div>
+              <div class="top-card-info">
+                <span class="top-perfume-name">Afnan Supremacy</span>
+                <span class="top-perfume-price">Rs. 11,700</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Luxury The Journal Section -->
+    <section class="journal-section">
+      <div class="section-container">
+        
+        <!-- Left Section Header -->
+        <div class="journal-header">
+          <div class="journal-title-group">
+            <span class="journal-supheading">Editorial Stories</span>
+            <h2 class="journal-title">The Journal</h2>
+            <div class="title-accent-bar-left"></div>
+          </div>
+          
+          <a href="/blogs/news" class="btn-view-all-light">
+            View All Blogs
+            <svg class="view-all-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Journal Grid -->
+        <div class="journal-grid">
+          
+          <!-- Blog Card 1 -->
+          <article class="journal-card">
+            <a href="/blogs/news/janan-gold" class="journal-img-link">
+              <div class="journal-image-wrapper">
+                <img src="assets/images/journal.jpg" alt="Janan Gold Edition by J. Junaid Jamshed" class="journal-img pos-janan">
+              </div>
+            </a>
+            <div class="journal-info">
+              <span class="journal-date">July 25, 2026</span>
+              <h3 class="journal-card-title">
+                <a href="/blogs/news/janan-gold">Janan Gold Edition by J. Junaid Jamshed — A Full Review</a>
+              </h3>
+              <p class="journal-excerpt">
+                Janan by J. Junaid Jamshed is Pakistan's most searched homegrown fragrance brand — featuring elegant jasmine tones and classic warm amber notes...
+              </p>
+              <a href="/blogs/news/janan-gold" class="journal-read-link">
+                Read Story
+                <span class="journal-link-line"></span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="journal-card">
+            <a href="/blogs/news/pakistani-weddings" class="journal-img-link">
+              <div class="journal-image-wrapper">
+                <img src="assets/images/journal.jpg" alt="Best Perfumes for Pakistani Weddings" class="journal-img pos-wedding">
+              </div>
+            </a>
+            <div class="journal-info">
+              <span class="journal-date">July 15, 2026</span>
+              <h3 class="journal-card-title">
+                <a href="/blogs/news/pakistani-weddings">Best Perfumes for Pakistani Weddings 2026 — Scent Layering</a>
+              </h3>
+              <p class="journal-excerpt">
+                Pakistani weddings demand a fragrance that performs — not just for hours, but through festive Baraat rituals, dense marigold arrangements, and midnight dances...
+              </p>
+              <a href="/blogs/news/pakistani-weddings" class="journal-read-link">
+                Read Story
+                <span class="journal-link-line"></span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="journal-card">
+            <a href="/blogs/news/reef-perfume-guide" class="journal-img-link">
+              <div class="journal-image-wrapper">
+                <img src="assets/images/journal.jpg" alt="Reef Perfume Guide Pakistan 2026" class="journal-img pos-reef">
+              </div>
+            </a>
+            <div class="journal-info">
+              <span class="journal-date">June 30, 2026</span>
+              <h3 class="journal-card-title">
+                <a href="/blogs/news/reef-perfume-guide">Reef Perfume Guide Pakistan 2026 — Key Scent Profiles</a>
+              </h3>
+              <p class="journal-excerpt">
+                Reef is one of the most consistently searched luxury fragrance brands. Explore the numbered scent notes (Reef 33, Reef 11, Reef 19) generating global interest...
+              </p>
+              <a href="/blogs/news/reef-perfume-guide" class="journal-read-link">
+                Read Story
+                <span class="journal-link-line"></span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Luxury Brand Stats Section -->
+    <section class="brand-stats-section">
+      <div class="stats-container">
+        
+        <!-- Left Column: Editorial Copy -->
+        <div class="stats-text-block">
+          <span class="stats-supheading">Pakistan's Premier Fragrance Boutique</span>
+          <h2 class="stats-title">
+            Buy Authentic Luxury <span class="stats-serif-italic">Perfumes</span>
+          </h2>
+          <p class="stats-description">
+            PerfumeDaddy.pk stocks over 2,000 original fragrances from the world's most prestigious perfume houses. Every product is 100% genuine, sourced directly from authorized global distributors, and delivered nationwide with cash on delivery conveniences.
+          </p>
+        </div>
+
+        <!-- Right Column: Stats Grid -->
+        <div class="stats-quad-grid">
+          
+          <!-- Stat 1 -->
+          <div class="stat-box">
+            <span class="stat-number">2,000+</span>
+            <span class="stat-label">Authentic Fragrances</span>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-box">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Original Products</span>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-box">
+            <span class="stat-number">COD</span>
+            <span class="stat-label">Nationwide Delivery</span>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-box">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Fragrance Support</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-glow"></div>
+    
+    <!-- Top Footer: Brand, Columns, Newsletter -->
+    <div class="footer-top-container">
+      
+      <!-- Brand & Newsletter -->
+      <div class="footer-brand-column">
+        <div class="footer-logo">
+          <span class="footer-logo-main">Perfume Daddy</span>
+          <span class="footer-logo-spark">✦</span>
+        </div>
+        <p class="footer-tagline">
+          Pakistan's premier luxury fragrance boutique. Curating the world's most prestigious scent houses for distinction and lasting impressions.
+        </p>
+        
+        <!-- Newsletter Box -->
+        <div class="footer-newsletter-wrap">
+          <span class="newsletter-title">Subscribe to the Newsletter</span>
+          <form class="newsletter-form" action="/subscribe" method="POST">
+            <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+            <button type="submit" class="btn-newsletter-submit" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Links Column 1: Shop -->
+      <div class="footer-links-column">
+        <h4 class="footer-column-heading">Shop Collections</h4>
+        <ul class="footer-links-list">
+          <li><a href="/collections/men" class="footer-link">Men's Perfume</a></li>
+          <li><a href="/collections/women" class="footer-link">Women's Perfume</a></li>
+          <li><a href="/collections/unisex" class="footer-link">Unisex Fragrances</a></li>
+          <li><a href="/collections/attar" class="footer-link">Authentic Attars</a></li>
+          <li><a href="/collections/deo" class="footer-link">Body Sprays</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2: Info -->
+      <div class="footer-links-column">
+        <h4 class="footer-column-heading">Customer Care</h4>
+        <ul class="footer-links-list">
+          <li><a href="/pages/contact" class="footer-link">Contact Us</a></li>
+          <li><a href="/pages/shipping" class="footer-link">Shipping & Delivery</a></li>
+          <li><a href="/pages/returns" class="footer-link">Returns & Exchanges</a></li>
+          <li><a href="/pages/faqs" class="footer-link">FAQs & Support</a></li>
+          <li><a href="/pages/store-locator" class="footer-link">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 3: Brand -->
+      <div class="footer-links-column">
+        <h4 class="footer-column-heading">The House</h4>
+        <ul class="footer-links-list">
+          <li><a href="/pages/our-story" class="footer-link">Our Story</a></li>
+          <li><a href="/blogs/news" class="footer-link">The Journal</a></li>
+          <li><a href="/pages/authenticity" class="footer-link">Authenticity Promise</a></li>
+          <li><a href="/pages/careers" class="footer-link">Careers</a></li>
+          <li><a href="/pages/press" class="footer-link">Press & Media</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer: Copyright and Socials -->
+    <div class="footer-bottom-container">
+      <div class="footer-bottom-divider"></div>
+      <div class="footer-bottom-flex">
+        
+        <!-- Copyright -->
+        <span class="footer-copyright">
+          &copy; 2026 Perfume Daddy. All Rights Reserved. Crafted for Distinction.
+        </span>
+
+        <!-- Social Icons -->
+        <div class="footer-social-row">
+          <a href="https://instagram.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="TikTok Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
