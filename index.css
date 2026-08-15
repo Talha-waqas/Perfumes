@@ -3327,12 +3327,127 @@ body {
         width: 100%;
       }
 
-      .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        margin-bottom: 32px;
-      }
+  /* Center-align Section Headers & Titles in Mobile View */
+  .best-sellers-section .section-container,
+  .hot-list-section .section-container,
+  .journal-section .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-header,
+  .hot-list-header,
+  .journal-header {
+    display: contents;
+  }
+
+  .header-title-wrapper,
+  .category-section-header,
+  .hot-list-title-group,
+  .journal-title-group,
+  .top-selling-header,
+  .stats-text-block {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 24px;
+    order: 1;
+  }
+
+  .section-supheading,
+  .section-title,
+  .category-supheading,
+  .category-title,
+  .hot-list-supheading,
+  .hot-list-title,
+  .journal-supheading,
+  .journal-title,
+  .stats-supheading,
+  .stats-title,
+  .stats-description {
+    text-align: center;
+  }
+
+  .title-accent-bar,
+  .title-accent-bar-left,
+  .title-accent-bar-center {
+    margin: 12px auto 0 auto !important;
+  }
+
+  /* Hot List Accent Bar & Layout */
+  .hot-list-section .title-accent-bar-left {
+    order: 2;
+    margin: 12px auto 20px auto !important;
+  }
+
+  .hot-list-tabs {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .product-grid {
+    order: 2;
+    margin-bottom: 28px;
+  }
+
+  .hot-list-grid.active {
+    order: 4;
+    margin-bottom: 28px;
+  }
+
+  .journal-grid {
+    order: 2;
+    margin-bottom: 28px;
+  }
+
+  /* Move View All / Action Buttons Below Products in Mobile View */
+  .btn-view-all,
+  .btn-view-all-light {
+    order: 5;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 13.5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    letter-spacing: 0.04em;
+  }
+
+  .btn-view-all {
+    background-color: #ffffff;
+    color: #1b1b1b;
+    border: 1px solid rgba(122, 0, 153, 0.2);
+    box-shadow: 0 4px 14px rgba(122, 0, 153, 0.06);
+  }
+
+  .btn-view-all:hover {
+    background-color: var(--primary-purple);
+    color: #ffffff;
+    border-color: var(--primary-purple);
+  }
+
+  .btn-view-all-light {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  .btn-view-all-light:hover {
+    background-color: var(--primary-purple);
+    border-color: var(--primary-purple);
+  }
+
 
       .promo-campaigns-section {
         padding: 60px 20px;
