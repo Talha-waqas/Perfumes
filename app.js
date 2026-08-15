@@ -311,5 +311,104 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = 'product.html';
     });
   });
+
+  /* ==========================================================================
+     Shop Page Interactive Logics (shop.html)
+     ========================================================================== */
+  const priceSlider = document.getElementById('priceRangeSlider');
+  const priceDisplay = document.getElementById('priceRangeDisplay');
+  const shopGrid = id('shopProductGrid');
+  const resultsCount = id('resultsCount');
+
+  if (priceSlider && priceDisplay) {
+    priceSlider.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value, 10);
+      priceDisplay.textContent = `Rs. 5,000 - Rs. ${val.toLocaleString()}`;
+      filterShopGrid();
+    });
+  }
+
+  // Category Shortcut Pills
+  const shopPills = document.querySelectorAll('.shop-nav-pill');
+  shopPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      shopPills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      filterShopGrid();
+    });
+  });
+
+  // Filter Shop Cards function
+  function filterShopGrid() {
+    if (!shopGrid) return;
+    const maxPrice = priceSlider ? parseInt(priceSlider.value, 10) : 250000;
+    const activePill = document.querySelector('.shop-nav-pill.active')?.getAttribute('data-filter') || 'all';
+    
+    let visibleCount = 0;
+    const cards = shopGrid.querySelectorAll('.product-card');
+    
+    cards.forEach(card => {
+      const cardPrice = parseInt(card.getAttribute('data-price') || '0', 10);
+      const cardScent = card.getAttribute('data-scent') || '';
+      
+      let matchesPill = true;
+      if (activePill === 'edp') matchesPill = (cardScent === 'woody' || cardScent === 'oriental' || cardScent === 'citrus');
+      else if (activePill === 'attar') matchesPill = (cardScent === 'oriental');
+      else if (activePill === 'deo') matchesPill = (cardScent === 'citrus');
+
+      const matchesPrice = cardPrice <= maxPrice;
+
+      if (matchesPill && matchesPrice) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (resultsCount) {
+      resultsCount.textContent = `Showing ${visibleCount} Fragrances`;
+    }
+  }
+
+  // Mobile Filter Drawer
+  const mobileFilterBtn = id('mobileFilterBtn');
+  const filterDrawerOverlay = id('filterDrawerOverlay');
+  const closeFilterDrawerBtn = id('closeFilterDrawerBtn');
+  const applyMobileFiltersBtn = id('applyMobileFiltersBtn');
+
+  if (mobileFilterBtn && filterDrawerOverlay) {
+    mobileFilterBtn.addEventListener('click', () => {
+      toggleDrawer(filterDrawerOverlay, 'active', true, mobileFilterBtn);
+    });
+  }
+
+  if (closeFilterDrawerBtn && filterDrawerOverlay) {
+    closeFilterDrawerBtn.addEventListener('click', () => {
+      toggleDrawer(filterDrawerOverlay, 'active', false, mobileFilterBtn);
+    });
+  }
+
+  if (applyMobileFiltersBtn && filterDrawerOverlay) {
+    applyMobileFiltersBtn.addEventListener('click', () => {
+      toggleDrawer(filterDrawerOverlay, 'active', false, mobileFilterBtn);
+      filterShopGrid();
+    });
+  }
+
+  // Reset Filters Button
+  const resetFiltersBtn = id('resetFiltersBtn');
+  if (resetFiltersBtn) {
+    resetFiltersBtn.addEventListener('click', () => {
+      if (priceSlider && priceDisplay) {
+        priceSlider.value = 150000;
+        priceDisplay.textContent = 'Rs. 5,000 - Rs. 150,000';
+      }
+      document.querySelectorAll('.filter-sidebar input[type="checkbox"]').forEach(cb => cb.checked = true);
+      shopPills.forEach(p => p.classList.remove('active'));
+      if (shopPills[0]) shopPills[0].classList.add('active');
+      filterShopGrid();
+    });
+  }
 });
 
