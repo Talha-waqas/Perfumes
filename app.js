@@ -51,6 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Search Event Listeners
+  const drawerSearchBtn = document.getElementById('drawerSearchBtn');
+  if (drawerSearchBtn && searchOverlay) {
+    drawerSearchBtn.addEventListener('click', () => {
+      if (mobileDrawerOverlay) toggleDrawer(mobileDrawerOverlay, 'active', false, menuBtn);
+      toggleDrawer(searchOverlay, 'active', true, searchBtn);
+      setTimeout(() => {
+        if (searchInput) searchInput.focus();
+      }, 100);
+    });
+  }
+
   if (searchBtn && searchOverlay) {
     searchBtn.addEventListener('click', () => {
       toggleDrawer(searchOverlay, 'active', true, searchBtn);
