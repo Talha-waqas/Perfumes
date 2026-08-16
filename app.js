@@ -410,5 +410,126 @@ document.addEventListener('DOMContentLoaded', () => {
       filterShopGrid();
     });
   }
+
+  /* ==========================================================================
+     Checkout Page Interactive Logics (checkout.html)
+     ========================================================================== */
+  const checkoutForm = id('checkoutForm');
+  const applyCouponBtn = id('applyCouponBtn');
+  const couponInput = id('couponInput');
+  const couponFeedback = id('couponFeedback');
+  const discountRow = id('discountRow');
+  const discountVal = id('discountVal');
+  const grandTotalVal = id('grandTotalVal');
+  const orderSuccessModal = id('orderSuccessModal');
+
+  let currentSubtotal = 130900;
+  let isDiscountApplied = false;
+
+  // Payment Radio Buttons Toggle Styling
+  const paymentCards = document.querySelectorAll('.payment-radio-card');
+  paymentCards.forEach(card => {
+    card.addEventListener('click', () => {
+      paymentCards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      const radio = card.querySelector('input[type="radio"]');
+      if (radio) radio.checked = true;
+    });
+  });
+
+  // Coupon Code Handler
+  if (applyCouponBtn && couponInput) {
+    applyCouponBtn.addEventListener('click', () => {
+      const code = couponInput.value.trim().toUpperCase();
+      if (!code) {
+        showCouponFeedback('Please enter a coupon code.', false);
+        return;
+      }
+
+      if (code === 'LUXURY10' || code === 'SAVE10') {
+        if (isDiscountApplied) {
+          showCouponFeedback('Coupon code is already applied.', true);
+          return;
+        }
+        isDiscountApplied = true;
+        const discountAmt = Math.round(currentSubtotal * 0.1);
+        const finalTotal = currentSubtotal - discountAmt;
+        
+        if (discountVal) discountVal.textContent = `- Rs. ${discountAmt.toLocaleString()}`;
+        if (discountRow) discountRow.style.display = 'flex';
+        if (grandTotalVal) grandTotalVal.textContent = `Rs. ${finalTotal.toLocaleString()}`;
+        showCouponFeedback('✓ 10% Discount Coupon Applied Successfully!', true);
+      } else {
+        showCouponFeedback('Invalid coupon code. Try "LUXURY10"', false);
+      }
+    });
+  }
+
+  function showCouponFeedback(msg, isSuccess) {
+    if (!couponFeedback) return;
+    couponFeedback.textContent = msg;
+    couponFeedback.className = `coupon-feedback-msg ${isSuccess ? 'success' : 'error'}`;
+  }
+
+  // Checkout Form Validation & Order Submission
+  if (checkoutForm) {
+    checkoutForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const phoneInput = id('contactPhone');
+      const nameInput = id('fullName');
+      const addressInput = id('streetAddress');
+      const citySelect = id('citySelect');
+
+      let isValid = true;
+
+      // Phone Validation
+      if (!phoneInput || !phoneInput.value.trim()) {
+        id('phoneErrorMsg')?.style.setProperty('display', 'block');
+        isValid = false;
+      } else {
+        id('phoneErrorMsg')?.style.setProperty('display', 'none');
+      }
+
+      // Name Validation
+      if (!nameInput || !nameInput.value.trim()) {
+        id('nameErrorMsg')?.style.setProperty('display', 'block');
+        isValid = false;
+      } else {
+        id('nameErrorMsg')?.style.setProperty('display', 'none');
+      }
+
+      // Address Validation
+      if (!addressInput || !addressInput.value.trim()) {
+        id('addressErrorMsg')?.style.setProperty('display', 'block');
+        isValid = false;
+      } else {
+        id('addressErrorMsg')?.style.setProperty('display', 'none');
+      }
+
+      // City Validation
+      if (!citySelect || !citySelect.value) {
+        citySelect?.classList.add('error');
+        isValid = false;
+      } else {
+        citySelect?.classList.remove('error');
+      }
+
+      if (!isValid) return;
+
+      // Generate Order Reference
+      const randomId = Math.floor(10000 + Math.random() * 90000);
+      const modalOrderRef = id('modalOrderRef');
+      const modalOrderTotal = id('modalOrderTotal');
+
+      if (modalOrderRef) modalOrderRef.textContent = `#PD-${randomId}`;
+      if (modalOrderTotal && grandTotalVal) modalOrderTotal.textContent = grandTotalVal.textContent;
+
+      // Show Order Success Modal
+      if (orderSuccessModal) {
+        orderSuccessModal.classList.add('active');
+      }
+    });
+  }
 });
 

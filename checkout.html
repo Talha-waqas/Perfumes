@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express Checkout | Perfume Daddy</title>
+  <meta name="description"
+    content="Complete your purchase with Cash on Delivery across Pakistan. 100% authentic luxury fragrances delivered directly to your doorstep.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span>Enjoy Free Delivery on Orders Above Rs. 20,000 – Shop Now!</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+
+      <!-- Mobile Menu Trigger -->
+      <button class="mobile-menu-trigger" aria-label="Toggle Menu" id="menuBtn">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Logo -->
+      <a href="index.html" class="logo-link" aria-label="Perfume Daddy Home">
+        <div class="logo-wrapper">
+          <svg class="logo-avatar" viewBox="0 0 100 100" width="42" height="42">
+            <circle cx="50" cy="50" r="48" fill="#7A0099" />
+            <path d="M30 42 C 40 32, 60 32, 70 42 L 75 42 L 75 46 L 25 46 Z" fill="#ffffff" />
+            <circle cx="42" cy="52" r="8" stroke="#ffffff" stroke-width="3" fill="none" />
+            <circle cx="58" cy="52" r="8" stroke="#ffffff" stroke-width="3" fill="none" />
+            <line x1="50" y1="52" x2="50" y2="52" stroke="#ffffff" stroke-width="3" />
+            <path d="M32 58 C 32 78, 68 78, 68 58 C 68 62, 32 62, 32 58 Z" fill="#ffffff" />
+            <path d="M40 60 Q 50 56 60 60 Q 50 64 40 60 Z" fill="#2d2d2d" />
+          </svg>
+          <div class="logo-text-group">
+            <span class="logo-subtitle">perfume</span>
+            <span class="logo-title">daddy</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="shop.html" class="nav-link">
+              Perfumes
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel">
+              <div class="dropdown-grid">
+                <div class="dropdown-column">
+                  <h3>By Concentration</h3>
+                  <ul>
+                    <li><a href="shop.html?category=edp">Eau de Parfum (EDP)</a></li>
+                    <li><a href="shop.html?category=edt">Eau de Toilette (EDT)</a></li>
+                    <li><a href="shop.html?category=edc">Eau de Cologne (EDC)</a></li>
+                    <li><a href="shop.html?category=extrait">Parfum Extraits</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-column">
+                  <h3>By Scent Profile</h3>
+                  <ul>
+                    <li><a href="shop.html?scent=woody">Woody & Earthy</a></li>
+                    <li><a href="shop.html?scent=citrus">Fresh & Citrusy</a></li>
+                    <li><a href="shop.html?scent=oriental">Warm & Spicy</a></li>
+                    <li><a href="shop.html?scent=floral">Floral & Sweet</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-column">
+                  <h3>Trending</h3>
+                  <ul>
+                    <li><a href="shop.html?sort=new">New Arrivals</a></li>
+                    <li><a href="shop.html?sort=best">Best Sellers</a></li>
+                    <li><a href="shop.html?category=exclusive">Exclusive Blends</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="shop.html?category=attar" class="nav-link">Attar</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="shop.html?category=deo" class="nav-link">
+              Deodorant
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel mini-dropdown">
+              <ul>
+                <li><a href="shop.html?gender=men">For Men</a></li>
+                <li><a href="shop.html?gender=women">For Women</a></li>
+                <li><a href="shop.html?gender=unisex">Unisex</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="shop.html?category=gift-set" class="nav-link">Gift Set</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="shop.html?category=miniature" class="nav-link">Miniature</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="shop.html?category=home" class="nav-link">
+              Home Fragrance
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-panel mini-dropdown">
+              <ul>
+                <li><a href="shop.html?category=reed">Reed Diffusers</a></li>
+                <li><a href="shop.html?category=sprays">Room Sprays</a></li>
+                <li><a href="shop.html?category=oils">Essential Oils</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="shop.html?category=candles" class="nav-link">Scented Candles</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="shop.html?section=brands" class="nav-link">Brands</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Utility Icons -->
+      <div class="header-utilities">
+        <button class="utility-btn utility-search-btn" id="searchBtn" aria-label="Search Catalog">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="#account" class="utility-btn utility-account-btn" aria-label="My Account">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <button class="utility-btn cart-btn" id="cartBtn" aria-label="Shopping Cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">1</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <div class="search-box">
+        <svg class="search-box-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+          fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="Search for perfumes, brands, notes..." aria-label="Search" id="searchInput">
+        <button class="search-close-btn" id="closeSearchBtn" aria-label="Close Search">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="search-suggestions">
+        <p class="suggestion-title">Popular Searches</p>
+        <div class="suggestion-tags">
+          <a href="shop.html?q=creed" class="tag">Creed Aventus</a>
+          <a href="shop.html?q=lattafa" class="tag">Lattafa Angham</a>
+          <a href="shop.html?q=hawas" class="tag">Rasasi Hawas Ice</a>
+          <a href="shop.html?q=sauvage" class="tag">Dior Sauvage</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h2>Your Bag</h2>
+        <button class="cart-close-btn" id="closeCartBtn" aria-label="Close Cart">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cart-drawer-body">
+        <div class="cart-items-list">
+          <div class="cart-item-card">
+            <div class="cart-item-thumb">
+              <img src="assets/images/best_sellers.jpg" alt="CREED Aventus Eau De Parfum">
+            </div>
+            <div class="cart-item-details">
+              <h4 class="cart-item-title">CREED Aventus Eau De Parfum (100ml)</h4>
+              <span class="cart-item-price">Rs. 130,900</span>
+              <div class="cart-item-qty-row">
+                <span class="cart-qty-label">Qty: 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-drawer-footer">
+          <div class="cart-subtotal-row">
+            <span>Subtotal:</span>
+            <span class="cart-subtotal-val">Rs. 130,900</span>
+          </div>
+          <a href="checkout.html" class="btn-primary btn-checkout-block">Proceed to Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <span class="mobile-logo-text">perfume daddy</span>
+        <button class="mobile-close-btn" id="closeMenuBtn" aria-label="Close Menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-body">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item"><a href="shop.html" class="mobile-nav-link">All Perfumes</a></li>
+          <li class="mobile-nav-item"><a href="shop.html?category=attar" class="mobile-nav-link">Attar</a></li>
+          <li class="mobile-nav-item"><a href="shop.html?category=deo" class="mobile-nav-link">Deodorant</a></li>
+          <li class="mobile-nav-item"><a href="shop.html?category=gift-set" class="mobile-nav-link">Gift Set</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb Bar -->
+  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <div class="checkout-wrapper">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li><span class="bc-sep">/</span></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><span class="bc-sep">/</span></li>
+        <li aria-current="page" class="bc-active">Checkout</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Checkout Section -->
+  <section class="checkout-main-section">
+    <div class="checkout-wrapper">
+
+      <div class="checkout-hero-header">
+        <h1 class="checkout-title">Checkout</h1>
+      </div>
+
+      <div class="checkout-layout-grid">
+
+        <!-- Left Column: Shipping & Payment Form -->
+        <main class="checkout-form-col">
+
+          <form id="checkoutForm" novalidate>
+
+            <!-- Step 1: Contact Information -->
+            <div class="checkout-card-box">
+              <div class="checkout-card-header">
+                <span class="step-num">1</span>
+                <h3>Contact Details</h3>
+              </div>
+              <div class="form-group-grid">
+                <div class="input-field-wrap">
+                  <label for="contactEmail">Email Address (Optional for e-receipt)</label>
+                  <input type="email" id="contactEmail" placeholder="your.name@example.com" class="form-input">
+                </div>
+                <div class="input-field-wrap">
+                  <label for="contactPhone">Mobile Phone Number (For Courier SMS & COD Call) *</label>
+                  <input type="tel" id="contactPhone" placeholder="0300 1234567" class="form-input" required>
+                  <span class="input-error-msg" id="phoneErrorMsg">Please enter a valid Pakistani mobile number.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Shipping Address -->
+            <div class="checkout-card-box">
+              <div class="checkout-card-header">
+                <span class="step-num">2</span>
+                <h3>Delivery Address</h3>
+              </div>
+
+              <div class="form-group-grid">
+                <div class="input-field-wrap span-2">
+                  <label for="fullName">Full Name *</label>
+                  <input type="text" id="fullName" placeholder="e.g. Muhammad Ali Khan" class="form-input" required>
+                  <span class="input-error-msg" id="nameErrorMsg">Please enter your full name.</span>
+                </div>
+
+                <div class="input-field-wrap span-2">
+                  <label for="streetAddress">Street Address / House / Flat No. *</label>
+                  <input type="text" id="streetAddress" placeholder="House #, Block/Street, Area" class="form-input"
+                    required>
+                  <span class="input-error-msg" id="addressErrorMsg">Please enter your complete delivery address.</span>
+                </div>
+
+                <div class="input-field-wrap">
+                  <label for="citySelect">City *</label>
+                  <select id="citySelect" class="form-select" required>
+                    <option value="" disabled selected>Select Your City</option>
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="islamabad">Islamabad</option>
+                    <option value="rawalpindi">Rawalpindi</option>
+                    <option value="faisalabad">Faisalabad</option>
+                    <option value="multan">Multan</option>
+                    <option value="peshawar">Peshawar</option>
+                    <option value="quetta">Quetta</option>
+                    <option value="sialkot">Sialkot</option>
+                    <option value="gujranwala">Gujranwala</option>
+                    <option value="other">Other Cities in Pakistan</option>
+                  </select>
+                </div>
+
+                <div class="input-field-wrap">
+                  <label for="postalCode">Postal Code (Optional)</label>
+                  <input type="text" id="postalCode" placeholder="e.g. 75500" class="form-input">
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Payment Method -->
+            <div class="checkout-card-box">
+              <div class="checkout-card-header">
+                <span class="step-num">3</span>
+                <h3>Payment Method</h3>
+              </div>
+
+              <div class="payment-options-list">
+
+                <label class="payment-radio-card active">
+                  <input type="radio" name="paymentMethod" value="cod" checked>
+                  <span class="radio-custom-circle"></span>
+                  <div class="payment-card-content">
+                    <div class="payment-card-title-row">
+                      <span class="payment-card-name">Cash on Delivery (COD)</span>
+                      <span class="payment-badge-rec">Recommended</span>
+                    </div>
+                    <p class="payment-card-desc">Pay in cash directly to courier rider upon delivery at your doorstep.
+                    </p>
+                  </div>
+                </label>
+
+                <label class="payment-radio-card">
+                  <input type="radio" name="paymentMethod" value="card">
+                  <span class="radio-custom-circle"></span>
+                  <div class="payment-card-content">
+                    <div class="payment-card-title-row">
+                      <span class="payment-card-name">Credit / Debit Card</span>
+                      <div class="card-icons-inline">
+                        <span class="card-icon-pill">VISA</span>
+                        <span class="card-icon-pill">MasterCard</span>
+                      </div>
+                    </div>
+                    <p class="payment-card-desc">Secure 256-bit encrypted online card processing.</p>
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- Complete Order Button -->
+            <button type="submit" class="btn-primary btn-submit-order" id="submitOrderBtn">
+              <span>Complete Order (Cash on Delivery)</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+          </form>
+
+        </main>
+
+        <!-- Right Column: Order Summary Card -->
+        <aside class="checkout-summary-col" aria-label="Order Summary">
+          <div class="summary-card-box">
+            <h3 class="summary-title">Order Summary</h3>
+
+            <!-- Item List -->
+            <div class="summary-items-list">
+              <div class="summary-item-card">
+                <div class="summary-item-thumb">
+                  <img src="assets/images/best_sellers.jpg" alt="Creed Aventus Perfume Bottle Showcase">
+                  <span class="summary-qty-badge">1</span>
+                </div>
+                <div class="summary-item-info">
+                  <h4 class="summary-item-title">CREED Aventus Eau De Parfum</h4>
+                  <span class="summary-item-meta">100ml Bottle</span>
+                </div>
+                <span class="summary-item-price">Rs. 130,900</span>
+              </div>
+            </div>
+
+            <!-- Coupon Code Section -->
+            <div class="coupon-box-wrap">
+              <div class="coupon-input-group">
+                <input type="text" id="couponInput" placeholder="Discount Code (e.g. LUXURY10)" class="coupon-input">
+                <button type="button" class="btn-coupon-apply" id="applyCouponBtn">Apply</button>
+              </div>
+              <span class="coupon-feedback-msg" id="couponFeedback"></span>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <!-- Cost Calculation Table -->
+            <div class="cost-table">
+              <div class="cost-row">
+                <span>Subtotal</span>
+                <span id="subtotalVal">Rs. 130,900</span>
+              </div>
+              <div class="cost-row">
+                <span>Standard Delivery</span>
+                <span class="free-delivery-text">FREE</span>
+              </div>
+              <div class="cost-row discount-row" id="discountRow" style="display: none;">
+                <span>Coupon Discount (10%)</span>
+                <span class="discount-val" id="discountVal">- Rs. 13,090</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="cost-row total-row">
+                <span>Grand Total</span>
+                <span class="total-val" id="grandTotalVal">Rs. 130,900</span>
+              </div>
+            </div>
+
+            <div class="checkout-trust-box">
+              <div class="trust-pill-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="#4ade80" stroke-width="2" fill="none">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span>100% Authentic Genuine Scent</span>
+              </div>
+              <div class="trust-pill-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="#e58cff" stroke-width="2" fill="none">
+                  <rect x="1" y="3" width="15" height="13" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+                <span>Free Express Delivery (2-3 Days)</span>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Instant Order Confirmation Success Modal -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="order-success-card">
+
+      <div class="success-icon-wrap">
+        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#ffffff" stroke-width="3" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <span class="success-tag">Order Confirmed</span>
+      <h2 class="success-title">Thank You For Your Order!</h2>
+      <p class="success-desc">
+        Your Cash on Delivery order has been successfully placed. Our dispatch team is preparing your package.
+      </p>
+
+      <div class="order-details-box">
+        <div class="detail-row">
+          <span>Order Reference:</span>
+          <strong id="modalOrderRef">#PD-98421</strong>
+        </div>
+        <div class="detail-row">
+          <span>Payment Method:</span>
+          <strong>Cash on Delivery (COD)</strong>
+        </div>
+        <div class="detail-row">
+          <span>Estimated Delivery:</span>
+          <strong>2–3 Working Days</strong>
+        </div>
+        <div class="detail-row">
+          <span>Total Amount:</span>
+          <strong class="highlight-price" id="modalOrderTotal">Rs. 130,900</strong>
+        </div>
+      </div>
+
+      <a href="shop.html" class="btn-primary btn-modal-done">Continue Shopping</a>
+
+    </div>
+  </div>
+
+  <!-- Luxury Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-glow"></div>
+
+    <!-- Top Footer: Brand, Columns, Newsletter -->
+    <div class="footer-top-container">
+
+      <!-- Brand & Newsletter -->
+      <div class="footer-brand-column">
+        <div class="footer-logo">
+          <span class="footer-logo-main">Perfume Daddy</span>
+          <span class="footer-logo-spark">✦</span>
+        </div>
+        <p class="footer-tagline">
+          Pakistan's premier luxury fragrance boutique. Curating the world's most prestigious scent houses for
+          distinction and lasting impressions.
+        </p>
+
+        <!-- Newsletter Box -->
+        <div class="footer-newsletter-wrap">
+          <span class="newsletter-title">Subscribe to the Newsletter</span>
+          <form class="newsletter-form" action="/subscribe" method="POST">
+            <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+            <button type="submit" class="btn-newsletter-submit" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Links Column 1: Shop -->
+      <div class="footer-links-column">
+        <h4 class="footer-column-heading">Shop Collections</h4>
+        <ul class="footer-links-list">
+          <li><a href="shop.html?gender=men" class="footer-link">Men's Perfume</a></li>
+          <li><a href="shop.html?gender=women" class="footer-link">Women's Perfume</a></li>
+          <li><a href="shop.html?gender=unisex" class="footer-link">Unisex Fragrances</a></li>
+          <li><a href="shop.html?category=attar" class="footer-link">Authentic Attars</a></li>
+          <li><a href="shop.html?category=deo" class="footer-link">Body Sprays</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2: Info -->
+      <div class="footer-links-column">
+        <h4 class="footer-column-heading">Customer Care</h4>
+        <ul class="footer-links-list">
+          <li><a href="/pages/contact" class="footer-link">Contact Us</a></li>
+          <li><a href="/pages/shipping" class="footer-link">Shipping & Delivery</a></li>
+          <li><a href="/pages/returns" class="footer-link">Returns & Exchanges</a></li>
+          <li><a href="/pages/faqs" class="footer-link">FAQs & Support</a></li>
+          <li><a href="/pages/store-locator" class="footer-link">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 3: Brand -->
+      <div class="footer-links-column">
+        <h4 class="footer-column-heading">The House</h4>
+        <ul class="footer-links-list">
+          <li><a href="/pages/our-story" class="footer-link">Our Story</a></li>
+          <li><a href="index.html#journal" class="footer-link">The Journal</a></li>
+          <li><a href="/pages/authenticity" class="footer-link">Authenticity Promise</a></li>
+          <li><a href="/pages/careers" class="footer-link">Careers</a></li>
+          <li><a href="/pages/press" class="footer-link">Press & Media</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer: Copyright and Socials -->
+    <div class="footer-bottom-container">
+      <div class="footer-bottom-divider"></div>
+      <div class="footer-bottom-flex">
+
+        <!-- Copyright -->
+        <span class="footer-copyright">
+          &copy; 2026 Perfume Daddy. All Rights Reserved. Crafted for Distinction.
+        </span>
+
+        <!-- Social Icons -->
+        <div class="footer-social-row">
+          <a href="https://instagram.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer"
+            aria-label="TikTok Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
