@@ -1347,7 +1347,7 @@ body {
 
 .product-title {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.45;
   margin-bottom: 12px;
   font-family: var(--font-body);
@@ -1384,6 +1384,37 @@ body {
 
 .price-current.font-highlight {
   color: #e58cff;
+}
+
+/* Light Background Overrides (e.g. Best Sellers section on index.html) */
+.best-sellers-section .brand-name {
+  color: #52525b;
+}
+
+.best-sellers-section .discount-tag {
+  color: var(--primary-purple);
+  background-color: rgba(122, 0, 153, 0.08);
+  border-color: rgba(122, 0, 153, 0.2);
+}
+
+.best-sellers-section .product-title a {
+  color: #18181b;
+}
+
+.best-sellers-section .product-title a:hover {
+  color: var(--primary-purple);
+}
+
+.best-sellers-section .price-original {
+  color: #71717a;
+}
+
+.best-sellers-section .price-current {
+  color: #18181b;
+}
+
+.best-sellers-section .price-current.font-highlight {
+  color: var(--primary-purple);
 }
 
 /* Responsive Best Sellers Adjustments */
