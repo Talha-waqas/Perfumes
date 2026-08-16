@@ -4365,7 +4365,8 @@ body {
 }
 
 .quantity-stepper input {
-  width: 36px;
+  width: 40px;
+  height: 100%;
   background: none;
   border: none;
   color: #ffffff;
@@ -4374,6 +4375,8 @@ body {
   font-weight: 600;
   text-align: center;
   outline: none;
+  appearance: textfield;
+  -webkit-appearance: none;
   -moz-appearance: textfield;
 }
 
@@ -5433,12 +5436,17 @@ body {
   .shop-grid .product-title {
     font-size: 13px;
     line-height: 1.35;
+    min-height: 35px;
+    margin-bottom: 6px;
+  }
+
+  .shop-grid .product-title a {
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    height: 35px;
-    margin-bottom: 6px;
+    color: #ffffff;
   }
 
   .shop-grid .price-current {
