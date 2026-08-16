@@ -6237,3 +6237,255 @@ body {
     font-size: 11px;
   }
 }
+
+/* ==========================================================================
+   404 Error Page (404.html / WP 404.php) Styles
+   ========================================================================== */
+
+.error-404-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #060606;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px 100px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.error-glow-ambient {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(122, 0, 153, 0.22) 0%, rgba(6, 6, 6, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.error-container {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.error-code-wrap {
+  margin-bottom: -40px;
+}
+
+.error-code-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 200px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  background: linear-gradient(180deg, rgba(229, 140, 255, 0.4) 0%, rgba(122, 0, 153, 0.05) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+
+.error-content-box {
+  background: rgba(18, 18, 22, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 44px 36px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.error-supheading {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #e58cff;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.error-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+
+.error-subtitle {
+  font-size: 15px;
+  color: #a1a1aa;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-search-form {
+  display: flex;
+  gap: 12px;
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+
+.error-search-input {
+  flex-grow: 1;
+  height: 52px;
+  background: #121215;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 0 18px;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.error-search-input:focus {
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 15px rgba(122, 0, 153, 0.3);
+}
+
+.btn-error-search {
+  height: 52px;
+  padding: 0 24px;
+  background: var(--primary-purple);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  box-shadow: 0 6px 20px rgba(122, 0, 153, 0.4);
+}
+
+.btn-error-search:hover {
+  background: #9000b5;
+  transform: translateY(-1px);
+}
+
+.error-pills-section {
+  margin-bottom: 32px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.error-pills-label {
+  display: block;
+  font-size: 12px;
+  color: #a1a1aa;
+  margin-bottom: 14px;
+}
+
+.error-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.error-pill {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #d4d4d8;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.error-pill:hover {
+  background: rgba(122, 0, 153, 0.25);
+  border-color: #e58cff;
+  color: #ffffff;
+}
+
+.error-cta-row {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-error-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 32px;
+  height: 52px;
+  border-radius: 10px;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 404 Responsive Media Queries */
+@media (max-width: 768px) {
+  .error-code-text {
+    font-size: 140px;
+  }
+
+  .error-code-wrap {
+    margin-bottom: -28px;
+  }
+
+  .error-content-box {
+    padding: 32px 20px;
+  }
+
+  .error-title {
+    font-size: 30px;
+  }
+
+  .error-subtitle {
+    font-size: 13.5px;
+    margin-bottom: 24px;
+  }
+
+  .error-search-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-error-search {
+    width: 100%;
+    justify-content: center;
+    height: 48px;
+  }
+
+  .error-search-input {
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-code-text {
+    font-size: 110px;
+  }
+
+  .error-title {
+    font-size: 25px;
+  }
+
+  .error-pill {
+    font-size: 11.5px;
+    padding: 6px 12px;
+  }
+}
