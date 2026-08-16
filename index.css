@@ -3312,17 +3312,17 @@ body {
   }
 
   .logo-title {
-        font-size: 22px;
-      }
+    font-size: 22px;
+  }
 
-      .logo-avatar {
-        width: 36px;
-        height: 36px;
-      }
+  .logo-avatar {
+    width: 36px;
+    height: 36px;
+  }
 
-      .cart-drawer {
-        width: 100%;
-      }
+  .cart-drawer {
+    width: 100%;
+  }
 
   /* Center-align Section Headers & Titles in Mobile View */
   .best-sellers-section .section-container,
@@ -3470,390 +3470,391 @@ body {
   }
 
 
-      .promo-campaigns-section {
-        padding: 60px 20px;
-      }
-
-      .promo-discount {
-        font-size: 36px;
-      }
-
-      .promo-brand-display {
-        font-size: 24px;
-      }
-
-      .category-selection-section {
-        padding: 60px 20px;
-      }
-
-      .hot-list-section {
-        padding: 60px 20px;
-      }
-
-
-
-      .luxury-cta-banner-section {
-        padding: 0 20px 60px 20px;
-      }
-
-      .cta-banner-container {
-        padding: 40px 24px;
-      }
-
-      .cta-banner-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-      }
-
-      .cta-banner-heading {
-        font-size: 26px;
-      }
-
-      .btn-cta-luxury-pill {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .top-selling-section {
-        padding: 60px 20px;
-      }
-
-      .journal-section {
-        padding: 60px 20px;
-      }
-
-      .journal-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-
-      .brand-stats-section {
-        padding: 60px 20px;
-      }
-
-      .footer-top-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .footer-bottom-flex {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-      }
-
-      .luxury-footer {
-        padding: 60px 20px 30px 20px;
-      }
-
-      /* Animated Quick Add buttons slide-up behavior for mobile */
-      .btn-quick-add,
-      .btn-quick-add-dark {
-        transform: translateY(101%);
-        padding: 12px;
-        font-size: 11px;
-      }
-
-      .product-image-wrapper:hover .btn-quick-add,
-      .product-image-wrapper:active .btn-quick-add,
-      .product-card:hover .btn-quick-add,
-      .product-card:active .btn-quick-add,
-      .product-card:focus-within .btn-quick-add,
-      .hot-image-wrapper:hover .btn-quick-add-dark,
-      .hot-image-wrapper:active .btn-quick-add-dark,
-      .hot-card:hover .btn-quick-add-dark,
-      .hot-card:active .btn-quick-add-dark,
-      .hot-card:focus-within .btn-quick-add-dark {
-        transform: translateY(0);
-      }
-    }
-
-    /* Extra Small Smartphones (max-width: 480px) */
-    @media (max-width: 480px) {
-      .announcement-bar {
-        font-size: 11px;
-        padding: 8px 12px;
-      }
-
-      .site-header {
-        height: 64px;
-      }
-
-      .header-container {
-        padding: 0 16px;
-      }
-
-      .logo-title {
-        font-size: 18px;
-      }
-
-      .logo-subtitle {
-        font-size: 8px;
-        letter-spacing: 0.16em;
-      }
-
-      .logo-avatar {
-        width: 32px;
-        height: 32px;
-      }
-
-      .header-utilities {
-        gap: 10px;
-      }
-
-      .utility-btn {
-        padding: 6px;
-      }
-
-      .luxury-hero {
-        padding: 40px 16px 60px 16px;
-      }
-
-      .hero-watermark {
-        font-size: 22vw;
-        top: 38%;
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.015);
-      }
-
-      .serif-title {
-        font-size: 32px;
-      }
-
-      .sans-title {
-        font-size: 36px;
-      }
-
-      .hero-supheading {
-        font-size: 10px;
-        letter-spacing: 0.25em;
-      }
-
-      .hero-description {
-        font-size: 13px;
-        margin-bottom: 28px;
-      }
-
-      .tilted-ticker-wrapper {
-        transform: skewY(-1.5deg) translateY(-5px);
-      }
-
-      .tilted-ticker-bar {
-        padding: 10px 0;
-      }
-
-      .ticker-content span {
-        font-size: 10px;
-        letter-spacing: 0.1em;
-      }
-
-      .best-sellers-section {
-        padding: 48px 16px;
-      }
-
-      .section-title {
-        font-size: 28px;
-      }
-
-      .product-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-      }
-
-      .product-info {
-        padding-top: 14px;
-      }
-
-      .brand-name {
-        font-size: 9px;
-      }
-
-      .product-title {
-        font-size: 13px;
-        line-height: 1.35;
-      }
-
-      .price-current {
-        font-size: 14px;
-      }
-
-      .category-selection-section {
-        padding: 48px 16px;
-      }
-
-      .category-title {
-        font-size: 28px;
-      }
-
-      .category-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 16px 12px !important;
-      }
-
-      .category-card:nth-child(5) {
-        grid-column: 1 / -1;
-        max-width: 170px;
-        margin: 0 auto;
-      }
-
-      .category-circle {
-        width: 125px !important;
-        height: 125px !important;
-      }
-
-      .category-initial {
-        font-size: 42px !important;
-      }
-
-      .category-name {
-        font-size: 15px;
-        margin-top: 10px;
-      }
-
-      .hot-list-section {
-        padding: 48px 16px;
-      }
-
-      .hot-list-title {
-        font-size: 28px;
-      }
-
-      .hot-list-tabs {
-        padding: 4px;
-        gap: 2px;
-      }
-
-      .tab-btn {
-        padding: 7px 13px;
-        font-size: 12px;
-      }
-
-      .hot-list-grid.active {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-      }
-
-      .hot-info {
-        padding-top: 14px;
-      }
-
-      .hot-card-title {
-        font-size: 13px;
-        line-height: 1.35;
-      }
-
-      .hot-price-current {
-        font-size: 14px;
-      }
-
-      .luxury-cta-banner-section {
-        padding: 0 12px 48px 12px;
-      }
-
-      .cta-banner-container {
-        padding: 30px 16px;
-        border-radius: 12px;
-      }
-
-      .cta-banner-heading {
-        font-size: 22px;
-      }
-
-      .btn-cta-luxury-pill {
-        padding: 14px 20px;
-        font-size: 13px;
-      }
-
-      .top-selling-section {
-        padding: 48px 16px;
-      }
-
-      .top-selling-title {
-        font-size: 28px;
-      }
-
-      .top-selling-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-      }
-
-      .top-card-inner {
-        padding: 12px;
-      }
-
-      .top-image-arch {
-        border-radius: 60px 60px 8px 8px;
-      }
-
-      .top-perfume-name {
-        font-size: 13px;
-      }
-
-      .top-perfume-price {
-        font-size: 13px;
-      }
-
-      .top-arrow-btn {
-        width: 28px;
-        height: 28px;
-        top: 18px;
-        right: 18px;
-      }
-
-      .top-rect-badge {
-        font-size: 8px;
-        padding: 4px 8px;
-      }
-
-      .journal-section {
-        padding: 48px 16px;
-      }
-
-      .journal-title {
-        font-size: 28px;
-      }
-
-      .journal-card-title {
-        font-size: 19px;
-      }
-
-      .brand-stats-section {
-        padding: 48px 16px;
-      }
-
-      .stats-title {
-        font-size: 24px;
-      }
-
-      .stat-box {
-        padding: 28px 12px;
-      }
-
-      .stat-number {
-        font-size: 34px;
-      }
-
-      .stat-label {
-        font-size: 9.5px;
-      }
-
-      .luxury-footer {
-        padding: 48px 16px 24px 16px;
-      }
-
-      .footer-logo-main {
-        font-size: 18px;
-      }
-
-      .footer-tagline {
-        font-size: 13px;
-        margin-bottom: 24px;
-      }
-    }
+  .promo-campaigns-section {
+    padding: 60px 20px;
+  }
+
+  .promo-discount {
+    font-size: 36px;
+  }
+
+  .promo-brand-display {
+    font-size: 24px;
+  }
+
+  .category-selection-section {
+    padding: 60px 20px;
+  }
+
+  .hot-list-section {
+    padding: 60px 20px;
+  }
+
+
+
+  .luxury-cta-banner-section {
+    padding: 0 20px 60px 20px;
+  }
+
+  .cta-banner-container {
+    padding: 40px 24px;
+  }
+
+  .cta-banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .cta-banner-heading {
+    font-size: 26px;
+  }
+
+  .btn-cta-luxury-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .top-selling-section {
+    padding: 60px 20px;
+  }
+
+  .journal-section {
+    padding: 60px 20px;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .brand-stats-section {
+    padding: 60px 20px;
+  }
+
+  .footer-top-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .luxury-footer {
+    padding: 60px 20px 30px 20px;
+  }
+
+  /* Animated Quick Add buttons slide-up behavior for mobile */
+  .btn-quick-add,
+  .btn-quick-add-dark {
+    transform: translateY(101%);
+    padding: 12px;
+    font-size: 11px;
+  }
+
+  .product-image-wrapper:hover .btn-quick-add,
+  .product-image-wrapper:active .btn-quick-add,
+  .product-card:hover .btn-quick-add,
+  .product-card:active .btn-quick-add,
+  .product-card:focus-within .btn-quick-add,
+  .hot-image-wrapper:hover .btn-quick-add-dark,
+  .hot-image-wrapper:active .btn-quick-add-dark,
+  .hot-card:hover .btn-quick-add-dark,
+  .hot-card:active .btn-quick-add-dark,
+  .hot-card:focus-within .btn-quick-add-dark {
+    transform: translateY(0);
+  }
+}
+
+/* Extra Small Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  .announcement-bar {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+
+  .site-header {
+    height: 64px;
+  }
+
+  .header-container {
+    padding: 0 16px;
+  }
+
+  .logo-title {
+    font-size: 18px;
+  }
+
+  .logo-subtitle {
+    font-size: 8px;
+    letter-spacing: 0.16em;
+  }
+
+  .logo-avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-utilities {
+    gap: 10px;
+  }
+
+  .utility-btn {
+    padding: 6px;
+  }
+
+  .luxury-hero {
+    padding: 40px 16px 60px 16px;
+  }
+
+  .hero-watermark {
+    font-size: 22vw;
+    top: 38%;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.015);
+  }
+
+  .serif-title {
+    font-size: 32px;
+  }
+
+  .sans-title {
+    font-size: 36px;
+  }
+
+  .hero-supheading {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+
+  .tilted-ticker-wrapper {
+    transform: skewY(-1.5deg) translateY(-5px);
+  }
+
+  .tilted-ticker-bar {
+    padding: 10px 0;
+  }
+
+  .ticker-content span {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .best-sellers-section {
+    padding: 48px 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .product-info {
+    padding-top: 14px;
+  }
+
+  .brand-name {
+    font-size: 9px;
+  }
+
+  .product-title {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .price-current {
+    font-size: 14px;
+  }
+
+  .category-selection-section {
+    padding: 48px 16px;
+  }
+
+  .category-title {
+    font-size: 28px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px 12px !important;
+  }
+
+  .category-card:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 170px;
+    margin: 0 auto;
+  }
+
+  .category-circle {
+    width: 125px !important;
+    height: 125px !important;
+  }
+
+  .category-initial {
+    font-size: 42px !important;
+  }
+
+  .category-name {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .hot-list-section {
+    padding: 48px 16px;
+  }
+
+  .hot-list-title {
+    font-size: 28px;
+  }
+
+  .hot-list-tabs {
+    padding: 4px;
+    gap: 2px;
+  }
+
+  .tab-btn {
+    padding: 7px 13px;
+    font-size: 12px;
+  }
+
+  .hot-list-grid.active {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .hot-info {
+    padding-top: 14px;
+  }
+
+  .hot-card-title {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .hot-price-current {
+    font-size: 14px;
+  }
+
+  .luxury-cta-banner-section {
+    padding: 0 12px 48px 12px;
+  }
+
+  .cta-banner-container {
+    padding: 30px 16px;
+    border-radius: 12px;
+  }
+
+  .cta-banner-heading {
+    font-size: 22px;
+  }
+
+  .btn-cta-luxury-pill {
+    padding: 14px 20px;
+    font-size: 13px;
+  }
+
+  .top-selling-section {
+    padding: 48px 16px;
+  }
+
+  .top-selling-title {
+    font-size: 28px;
+  }
+
+  .top-selling-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .top-card-inner {
+    padding: 12px;
+  }
+
+  .top-image-arch {
+    border-radius: 60px 60px 8px 8px;
+  }
+
+  .top-perfume-name {
+    font-size: 13px;
+  }
+
+  .top-perfume-price {
+    font-size: 13px;
+  }
+
+  .top-arrow-btn {
+    width: 28px;
+    height: 28px;
+    top: 18px;
+    right: 18px;
+  }
+
+  .top-rect-badge {
+    font-size: 8px;
+    padding: 4px 8px;
+  }
+
+  .journal-section {
+    padding: 48px 16px;
+  }
+
+  .journal-title {
+    font-size: 28px;
+  }
+
+  .journal-card-title {
+    font-size: 19px;
+  }
+
+  .brand-stats-section {
+    padding: 48px 16px;
+  }
+
+  .stats-title {
+    font-size: 24px;
+  }
+
+  .stat-box {
+    padding: 28px 12px;
+  }
+
+  .stat-number {
+    font-size: 34px;
+  }
+
+  .stat-label {
+    font-size: 9.5px;
+  }
+
+  .luxury-footer {
+    padding: 48px 16px 24px 16px;
+  }
+
+  .footer-logo-main {
+    font-size: 18px;
+  }
+
+  .footer-tagline {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+}
 
 
 /* Explicit Mobile Header Cleanliness Rule */
 @media screen and (max-width: 768px) {
+
   .header-utilities .utility-search-btn,
   .header-utilities .utility-account-btn {
     display: none !important;
@@ -4202,10 +4203,12 @@ body {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
   }
+
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 6px rgba(74, 222, 128, 0);
   }
+
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
@@ -5476,7 +5479,8 @@ body {
     padding: 10px 2px 2px;
   }
 
-  .page-num, .page-next {
+  .page-num,
+  .page-next {
     height: 38px;
     font-size: 13px;
   }
@@ -5668,11 +5672,11 @@ body {
   transition: all 0.2s ease;
 }
 
-.payment-radio-card input[type="radio"]:checked + .radio-custom-circle {
+.payment-radio-card input[type="radio"]:checked+.radio-custom-circle {
   border-color: #e58cff;
 }
 
-.payment-radio-card input[type="radio"]:checked + .radio-custom-circle::after {
+.payment-radio-card input[type="radio"]:checked+.radio-custom-circle::after {
   content: '';
   width: 10px;
   height: 10px;
@@ -6061,7 +6065,8 @@ body {
   }
 
   .checkout-summary-col {
-    order: -1; /* Order Summary displayed at top on mobile */
+    order: -1;
+    /* Order Summary displayed at top on mobile */
   }
 
   .checkout-form-col {
@@ -6286,7 +6291,7 @@ body {
   line-height: 1;
   letter-spacing: 0.05em;
   background: linear-gradient(180deg, rgba(229, 140, 255, 0.4) 0%, rgba(122, 0, 153, 0.05) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   user-select: none;
 }
