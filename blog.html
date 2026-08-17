@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop Luxury Perfumes & Attars | Perfume Daddy</title>
-  <meta name="description" content="Explore Pakistan's finest collection of authentic designer perfumes, oriental attars, body sprays, and gift sets. Filter by brand, price, and scent notes.">
+  <title>The Fragrance Journal | Perfume Daddy</title>
+  <meta name="description" content="Explore perfumery insights, scent guides, note breakdowns, and authenticity tips from Perfume Daddy's fragrance connoisseurs.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Site Header -->
   <header class="site-header">
     <div class="header-container">
       
@@ -62,7 +63,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="shop.html" class="nav-link active">Shop</a>
+            <a href="shop.html" class="nav-link">Shop</a>
           </li>
 
           <li class="nav-item has-dropdown">
@@ -86,7 +87,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="blog.html" class="nav-link">Journal</a>
+            <a href="blog.html" class="nav-link active">Journal</a>
           </li>
 
           <li class="nav-item">
@@ -173,7 +174,7 @@
             <path d="M16 10a4 4 0 0 1-8 0"></path>
           </svg>
           <p>Your bag is empty.</p>
-          <button class="btn-primary" id="drawerContinueBtn">Continue Shopping</button>
+          <a href="shop.html" class="btn-primary">Browse Perfumes</a>
         </div>
       </div>
     </div>
@@ -222,10 +223,10 @@
 
         <ul class="mobile-nav-list">
           <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
-          <li class="mobile-nav-item"><a href="shop.html" class="mobile-nav-link active">Shop</a></li>
+          <li class="mobile-nav-item"><a href="shop.html" class="mobile-nav-link">Shop</a></li>
           <li class="mobile-nav-item"><a href="shop.html?category=deo" class="mobile-nav-link">Deodorant</a></li>
           <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
-          <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Journal</a></li>
+          <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link active">Journal</a></li>
           <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
         </ul>
       </div>
@@ -234,248 +235,218 @@
 
   <!-- Breadcrumb Bar -->
   <nav class="breadcrumb-container" aria-label="Breadcrumb">
-    <div class="shop-wrapper">
+    <div class="blog-wrapper">
       <ol class="breadcrumb-list">
         <li><a href="index.html">Home</a></li>
         <li><span class="bc-sep">/</span></li>
-        <li><a href="shop.html">Collections</a></li>
-        <li><span class="bc-sep">/</span></li>
-        <li aria-current="page" class="bc-active">All Luxury Fragrances</li>
+        <li aria-current="page" class="bc-active">The Journal</li>
       </ol>
     </div>
   </nav>
 
-  <!-- Collection Hero Banner -->
-  <section class="shop-hero-section">
-    <div class="shop-wrapper">
-      <div class="shop-hero-content">
-        <span class="shop-supheading">The Imperial Reserve</span>
-        <h1 class="shop-hero-title">Luxury Perfumes & Attars</h1>
-        <p class="shop-hero-desc">
-          Discover Pakistan's curated boutique of 100% authentic niche fragrances, Eau de Parfums, and traditional concentrated oils direct from European houses.
+  <!-- Journal Hero Section -->
+  <section class="blog-hero-section">
+    <div class="hero-watermark">JOURNAL</div>
+    <div class="hero-bg-glow"></div>
+    <div class="blog-wrapper">
+      <div class="blog-hero-content">
+        <span class="blog-badge">Perfumery Insights</span>
+        <h1 class="blog-hero-title">The Fragrance Journal</h1>
+        <p class="blog-hero-desc">
+          Explore artisanal fragrance guides, scent note breakdowns, batch code verification secrets, and seasonal scent recommendations.
         </p>
-        
-        <!-- Category Shortcut Pills -->
-        <div class="shop-pill-nav">
-          <button class="shop-nav-pill active" data-filter="all">All (24)</button>
-          <button class="shop-nav-pill" data-filter="edp">Eau de Parfum</button>
-          <button class="shop-nav-pill" data-filter="attar">Pure Attar</button>
-          <button class="shop-nav-pill" data-filter="deo">Body Sprays</button>
-          <button class="shop-nav-pill" data-filter="gift">Gift Sets</button>
+
+        <!-- Topic Pills -->
+        <div class="blog-pill-nav">
+          <button class="blog-nav-pill active">All Articles</button>
+          <button class="blog-nav-pill">Scent Guides</button>
+          <button class="blog-nav-pill">Note Breakdowns</button>
+          <button class="blog-nav-pill">Authenticity</button>
+          <button class="blog-nav-pill">Attar Culture</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Main Shop Catalog Layout -->
-  <section class="shop-main-section">
-    <div class="shop-wrapper">
-      <div class="shop-full-container">
+  <!-- Featured Article Banner -->
+  <section class="blog-featured-section">
+    <div class="blog-wrapper">
+      <a href="blog-post.html" class="featured-article-card">
+        <div class="featured-image-wrap">
+          <img src="assets/images/journal_1.jpg" alt="Artisanal perfume glass bottle with golden atomized mist" class="featured-img">
+          <span class="article-category-badge">Featured Scent Guide</span>
+        </div>
+        <div class="featured-content">
+          <div class="article-meta">
+            <span class="meta-date">August 15, 2026</span>
+            <span class="meta-dot">•</span>
+            <span class="meta-read">6 Min Read</span>
+          </div>
+          <h2 class="featured-title">The Science of Sillage & Projection: How to Make Your Fragrance Last All Day</h2>
+          <p class="featured-excerpt">
+            Ever wondered why your favorite Eau de Parfum fades quickly while oriental attars linger for 24 hours? We break down pulse points, skin hydration, concentration percentages, and atmospheric layering tricks.
+          </p>
+          <div class="read-article-link">
+            <span>Read Full Article</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Journal Grid Feed -->
+  <section class="blog-grid-section">
+    <div class="blog-wrapper">
+      <div class="blog-grid">
         
-        <!-- Top Sorting & Control Toolbar -->
-        <div class="shop-toolbar">
-          <div class="toolbar-left">
-            <span class="results-counter" id="resultsCount">Showing 9 Fragrances</span>
+        <!-- Article 1 -->
+        <article class="journal-card-item">
+          <a href="blog-post.html" class="card-image-link">
+            <div class="card-image-wrap">
+              <img src="assets/images/journal_2.jpg" alt="Traditional distilled oriental attar in decanter bottle" class="card-img">
+              <span class="card-category-badge">Attar Culture</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <div class="article-meta">
+              <span class="meta-date">August 10, 2026</span>
+              <span class="meta-dot">•</span>
+              <span class="meta-read">4 Min Read</span>
+            </div>
+            <h3 class="card-article-title"><a href="blog-post.html">Oud vs Attar: Understanding Traditional Eastern Distillations</a></h3>
+            <p class="card-article-excerpt">
+              Unpacking the centuries-old hydro-distillation method behind pure Dehn Al Oud and floral attars in Kannauj and Arabia.
+            </p>
+            <a href="blog-post.html" class="card-read-more">Read More &rarr;</a>
           </div>
+        </article>
 
-            <div class="toolbar-right">
-              <label for="sortSelect" class="sort-label">Sort By:</label>
-              <select id="sortSelect" class="sort-dropdown" aria-label="Sort Catalog Products">
-                <option value="featured">Featured Collection</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-                <option value="rating">Highest Customer Rating</option>
-              </select>
+        <!-- Article 2 -->
+        <article class="journal-card-item">
+          <a href="blog-post.html" class="card-image-link">
+            <div class="card-image-wrap">
+              <img src="assets/images/journal_3.jpg" alt="Luxury perfume bottle displaying batch code verification tag" class="card-img">
+              <span class="card-category-badge">Authenticity</span>
             </div>
+          </a>
+          <div class="card-body">
+            <div class="article-meta">
+              <span class="meta-date">July 28, 2026</span>
+              <span class="meta-dot">•</span>
+              <span class="meta-read">5 Min Read</span>
+            </div>
+            <h3 class="card-article-title"><a href="blog-post.html">Decanting & Batch Codes: How to Spot Authentic Bottlings</a></h3>
+            <p class="card-article-excerpt">
+              Learn how to verify laser-etched batch numbers, atomizers, and cellowrap folds to ensure 100% genuine Creed and Dior items.
+            </p>
+            <a href="blog-post.html" class="card-read-more">Read More &rarr;</a>
           </div>
+        </article>
 
-          <!-- Product Grid Listing -->
-          <div class="product-grid shop-grid" id="shopProductGrid">
-            
-            <!-- Card 1: Creed Aventus -->
-            <div class="product-card" data-brand="creed" data-price="130900" data-gender="men" data-scent="woody">
-              <div class="product-image-wrapper">
-                <span class="product-badge sale">Sale</span>
-                <img src="assets/images/best_sellers.jpg" alt="Creed Aventus Eau De Parfum 100ml" class="product-img img-pos-1">
-                <button class="btn-quick-add" aria-label="Add Creed Aventus to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Creed</span>
-                  <span class="discount-tag">-3%</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">CREED Aventus Eau De Parfum For Men 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-original">Rs. 135,000</span>
-                  <span class="price-current">Rs. 130,900</span>
-                </div>
-              </div>
+        <!-- Article 3 -->
+        <article class="journal-card-item">
+          <a href="blog-post.html" class="card-image-link">
+            <div class="card-image-wrap">
+              <img src="assets/images/best_sellers.jpg" alt="Creed Aventus 100ml fragrance bottle" class="card-img">
+              <span class="card-category-badge">Scent Guide</span>
             </div>
-
-            <!-- Card 2: Lattafa Angham -->
-            <div class="product-card" data-brand="lattafa" data-price="6820" data-gender="unisex" data-scent="oriental">
-              <div class="product-image-wrapper">
-                <span class="product-badge sale">Sale</span>
-                <img src="assets/images/best_sellers.jpg" alt="Lattafa Angham Eau De Parfum 100ml" class="product-img img-pos-2">
-                <button class="btn-quick-add" aria-label="Add Lattafa Angham to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Lattafa Perfumes</span>
-                  <span class="discount-tag">-26%</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Lattafa Angham Eau De Parfum Unisex 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-original">Rs. 9,180</span>
-                  <span class="price-current">Rs. 6,820</span>
-                </div>
-              </div>
+          </a>
+          <div class="card-body">
+            <div class="article-meta">
+              <span class="meta-date">July 15, 2026</span>
+              <span class="meta-dot">•</span>
+              <span class="meta-read">7 Min Read</span>
             </div>
-
-            <!-- Card 3: Rasasi Hawas Ice -->
-            <div class="product-card" data-brand="rasasi" data-price="15620" data-gender="men" data-scent="citrus">
-              <div class="product-image-wrapper">
-                <img src="assets/images/best_sellers.jpg" alt="Rasasi Hawas Ice Eau De Parfum 100ml" class="product-img img-pos-3">
-                <button class="btn-quick-add" aria-label="Add Rasasi Hawas Ice to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Rasasi</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Rasasi Hawas Ice Eau De Parfum For Men 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-current font-highlight">Rs. 15,620</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 4: Dior Sauvage -->
-            <div class="product-card" data-brand="dior" data-price="54100" data-gender="men" data-scent="woody">
-              <div class="product-image-wrapper">
-                <span class="product-badge sale">Sale</span>
-                <img src="assets/images/hot_list.jpg" alt="Dior Sauvage Parfum 100ml" class="product-img hot-pos-2">
-                <button class="btn-quick-add" aria-label="Add Dior Sauvage to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Dior</span>
-                  <span class="discount-tag">-19%</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Dior Sauvage Parfum For Men 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-original">Rs. 66,970</span>
-                  <span class="price-current">Rs. 54,100</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 5: Versace Eros -->
-            <div class="product-card" data-brand="versace" data-price="26030" data-gender="men" data-scent="oriental">
-              <div class="product-image-wrapper">
-                <span class="product-badge sale">Sale</span>
-                <img src="assets/images/hot_list.jpg" alt="Versace Eros Eau De Parfum 100ml" class="product-img hot-pos-3">
-                <button class="btn-quick-add" aria-label="Add Versace Eros to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Versace</span>
-                  <span class="discount-tag">-20%</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Versace Eros Eau De Parfum For Men 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-original">Rs. 32,530</span>
-                  <span class="price-current">Rs. 26,030</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 6: Chanel Bleu De Chanel -->
-            <div class="product-card" data-brand="chanel" data-price="64500" data-gender="men" data-scent="woody">
-              <div class="product-image-wrapper">
-                <span class="product-badge sale">Sale</span>
-                <img src="assets/images/hot_list.jpg" alt="Bleu De Chanel Eau De Parfum 100ml" class="product-img hot-pos-4">
-                <button class="btn-quick-add" aria-label="Add Bleu De Chanel to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Chanel</span>
-                  <span class="discount-tag">-3%</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Chanel Bleu De Chanel Eau De Parfum 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-original">Rs. 66,350</span>
-                  <span class="price-current">Rs. 64,500</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 7: Lattafa Yara -->
-            <div class="product-card" data-brand="lattafa" data-price="5500" data-gender="women" data-scent="floral">
-              <div class="product-image-wrapper">
-                <span class="product-badge sale">Popular</span>
-                <img src="assets/images/top_selling.jpg" alt="Lattafa Yara Eau De Parfum 100ml" class="product-img pos-yara">
-                <button class="btn-quick-add" aria-label="Add Lattafa Yara to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Lattafa Perfumes</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Lattafa Yara Eau De Parfum For Women 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-current">Rs. 5,500</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 8: Rayhaan Kiss -->
-            <div class="product-card" data-brand="rayhaan" data-price="8500" data-gender="unisex" data-scent="oriental">
-              <div class="product-image-wrapper">
-                <img src="assets/images/top_selling.jpg" alt="Rayhaan Kiss Eau De Parfum 100ml" class="product-img pos-kiss">
-                <button class="btn-quick-add" aria-label="Add Rayhaan Kiss to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Rayhaan</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Rayhaan Kiss Eau De Parfum Unisex 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-current">Rs. 8,500</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 9: Afnan Supremacy -->
-            <div class="product-card" data-brand="afnan" data-price="11700" data-gender="men" data-scent="woody">
-              <div class="product-image-wrapper">
-                <span class="product-badge sale">Collector</span>
-                <img src="assets/images/top_selling.jpg" alt="Afnan Supremacy Collector's Edition 100ml" class="product-img pos-supremacy">
-                <button class="btn-quick-add" aria-label="Add Afnan Supremacy to Bag">Add to Bag</button>
-              </div>
-              <div class="product-info">
-                <div class="brand-row">
-                  <span class="brand-name">Afnan Perfumes</span>
-                </div>
-                <h3 class="product-title"><a href="product.html">Afnan Supremacy Collector's Edition 100ml</a></h3>
-                <div class="price-row">
-                  <span class="price-current">Rs. 11,700</span>
-                </div>
-              </div>
-            </div>
-
+            <h3 class="card-article-title"><a href="blog-post.html">Top 5 Signature Fragrances for Men in Pakistan (2026 Edition)</a></h3>
+            <p class="card-article-excerpt">
+              From smoky pineapple openings to icy aquatic notes: exploring Creed Aventus, Sauvage, Hawas Ice, and Lattafa Angham.
+            </p>
+            <a href="blog-post.html" class="card-read-more">Read More &rarr;</a>
           </div>
+        </article>
 
-          <!-- Shop Pagination -->
-          <div class="shop-pagination">
-            <button class="page-num active">1</button>
-            <button class="page-num">2</button>
-            <button class="page-next" aria-label="Next Page">
-              <span>Next</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </button>
+        <!-- Article 4 -->
+        <article class="journal-card-item">
+          <a href="blog-post.html" class="card-image-link">
+            <div class="card-image-wrap">
+              <img src="assets/images/hot_list.jpg" alt="Collection of luxury perfume bottles on velvet counter" class="card-img">
+              <span class="card-category-badge">Note Breakdowns</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <div class="article-meta">
+              <span class="meta-date">June 30, 2026</span>
+              <span class="meta-dot">•</span>
+              <span class="meta-read">4 Min Read</span>
+            </div>
+            <h3 class="card-article-title"><a href="blog-post.html">Layering Notes: Combining Woody & Citrus Scent Profiles</a></h3>
+            <p class="card-article-excerpt">
+              Discover how pairing a heavy cedarwood base note with a bright bergamot top note creates a bespoke personal sillage.
+            </p>
+            <a href="blog-post.html" class="card-read-more">Read More &rarr;</a>
           </div>
+        </article>
 
+        <!-- Article 5 -->
+        <article class="journal-card-item">
+          <a href="blog-post.html" class="card-image-link">
+            <div class="card-image-wrap">
+              <img src="assets/images/top_selling.jpg" alt="Fragrance vault dark climate storage bottles" class="card-img">
+              <span class="card-category-badge">Maintenance</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <div class="article-meta">
+              <span class="meta-date">June 12, 2026</span>
+              <span class="meta-dot">•</span>
+              <span class="meta-read">3 Min Read</span>
+            </div>
+            <h3 class="card-article-title"><a href="blog-post.html">Storage & Vaulting: Preserving Volatile Top Notes</a></h3>
+            <p class="card-article-excerpt">
+              Why bathroom mirrors ruin delicate citrus accords and why temperature-controlled dark storage protects EDP longevity.
+            </p>
+            <a href="blog-post.html" class="card-read-more">Read More &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="journal-card-item">
+          <a href="blog-post.html" class="card-image-link">
+            <div class="card-image-wrap">
+              <img src="assets/images/hero_perfumes.jpg" alt="High concentration EDP bottle showcase" class="card-img">
+              <span class="card-category-badge">Scent Guide</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <div class="article-meta">
+              <span class="meta-date">May 22, 2026</span>
+              <span class="meta-dot">•</span>
+              <span class="meta-read">5 Min Read</span>
+            </div>
+            <h3 class="card-article-title"><a href="blog-post.html">Concentration Guide: EDP vs EDT vs Parfum Extraits</a></h3>
+            <p class="card-article-excerpt">
+              Understanding perfume oil percentages, maceration times, and choosing between light office sprays and heavy evening scents.
+            </p>
+            <a href="blog-post.html" class="card-read-more">Read More &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="shop-pagination">
+        <button class="page-num active">1</button>
+        <button class="page-num">2</button>
+        <button class="page-next" aria-label="Next Page">
+          <span>Next</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
       </div>
     </div>
   </section>
@@ -483,7 +454,11 @@
   <!-- Luxury Footer -->
   <footer class="luxury-footer">
     <div class="footer-glow"></div>
+    
+    <!-- Top Footer: Brand, Columns, Newsletter -->
     <div class="footer-top-container">
+      
+      <!-- Brand & Newsletter -->
       <div class="footer-brand-column">
         <div class="footer-logo">
           <span class="footer-logo-main">Perfume Daddy</span>
@@ -492,6 +467,8 @@
         <p class="footer-tagline">
           Pakistan's premier luxury fragrance boutique. Curating the world's most prestigious scent houses for distinction and lasting impressions.
         </p>
+        
+        <!-- Newsletter Box -->
         <div class="footer-newsletter-wrap">
           <span class="newsletter-title">Subscribe to the Newsletter</span>
           <form class="newsletter-form" action="/subscribe" method="POST">
@@ -506,6 +483,7 @@
         </div>
       </div>
 
+      <!-- Links Column 1: Shop -->
       <div class="footer-links-column">
         <h4 class="footer-column-heading">Shop Collections</h4>
         <ul class="footer-links-list">
@@ -531,19 +509,27 @@
       <div class="footer-links-column">
         <h4 class="footer-column-heading">The House</h4>
         <ul class="footer-links-list">
+          <li><a href="about.html" class="footer-link">Our Heritage & Story</a></li>
           <li><a href="shop.html" class="footer-link">Our Vault</a></li>
           <li><a href="index.html#hot-list" class="footer-link">Featured Releases</a></li>
-          <li><a href="index.html#journal" class="footer-link">The Journal</a></li>
+          <li><a href="blog.html" class="footer-link">The Journal</a></li>
           <li><a href="index.html#top-selling" class="footer-link">Top Selling</a></li>
         </ul>
       </div>
 
     </div>
 
+    <!-- Bottom Footer: Copyright and Socials -->
     <div class="footer-bottom-container">
       <div class="footer-bottom-divider"></div>
       <div class="footer-bottom-flex">
-        <span class="footer-copyright">&copy; 2026 Perfume Daddy. All Rights Reserved. Crafted for Distinction.</span>
+        
+        <!-- Copyright -->
+        <span class="footer-copyright">
+          &copy; 2026 Perfume Daddy. All Rights Reserved. Crafted for Distinction.
+        </span>
+
+        <!-- Social Icons -->
         <div class="footer-social-row">
           <a href="https://instagram.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
             <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -563,6 +549,7 @@
             </svg>
           </a>
         </div>
+
       </div>
     </div>
   </footer>

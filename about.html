@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Express Checkout | Perfume Daddy</title>
+  <title>About Our Heritage & Authenticity Promise | Perfume Daddy</title>
   <meta name="description"
-    content="Complete your purchase with Cash on Delivery across Pakistan. 100% authentic luxury fragrances delivered directly to your doorstep.">
+    content="Learn about Perfume Daddy's passion for authentic luxury fragrances. Direct European imports, 100% genuine niche scents, oriental attars, and express delivery across Pakistan.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -27,7 +28,7 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Site Header -->
   <header class="site-header">
     <div class="header-container">
 
@@ -127,14 +128,14 @@
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <path d="M16 10a4 4 0 0 1-8 0"></path>
           </svg>
-          <span class="cart-badge">1</span>
+          <span class="cart-badge">0</span>
         </button>
       </div>
 
     </div>
   </header>
 
-  <!-- Search Overlay -->
+  <!-- Interactive Slide-out Search Panel -->
   <div class="search-overlay" id="searchOverlay">
     <div class="search-container">
       <div class="search-box">
@@ -164,7 +165,7 @@
     </div>
   </div>
 
-  <!-- Cart Drawer -->
+  <!-- Interactive Slide-out Cart Drawer -->
   <div class="cart-drawer-overlay" id="cartDrawerOverlay">
     <div class="cart-drawer">
       <div class="cart-drawer-header">
@@ -179,26 +180,15 @@
       </div>
 
       <div class="cart-drawer-body">
-        <div class="cart-items-list">
-          <div class="cart-item-card">
-            <div class="cart-item-thumb">
-              <img src="assets/images/best_sellers.jpg" alt="CREED Aventus Eau De Parfum">
-            </div>
-            <div class="cart-item-details">
-              <h4 class="cart-item-title">CREED Aventus Eau De Parfum (100ml)</h4>
-              <span class="cart-item-price">Rs. 130,900</span>
-              <div class="cart-item-qty-row">
-                <span class="cart-qty-label">Qty: 1</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cart-drawer-footer">
-          <div class="cart-subtotal-row">
-            <span>Subtotal:</span>
-            <span class="cart-subtotal-val">Rs. 130,900</span>
-          </div>
-          <a href="checkout.html" class="btn-primary btn-checkout-block">Proceed to Checkout</a>
+        <div class="empty-cart-state">
+          <svg viewBox="0 0 24 24" width="48" height="48" stroke="#ccc" stroke-width="1.5" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <p>Your bag is empty.</p>
+          <a href="shop.html" class="btn-primary">Browse Perfumes</a>
         </div>
       </div>
     </div>
@@ -218,19 +208,20 @@
         </button>
       </div>
       <div class="mobile-drawer-body">
-        <!-- Quick Actions (Search & Account) -->
         <div class="mobile-drawer-utilities">
           <button class="mobile-search-trigger" id="drawerSearchBtn" aria-label="Search Catalog">
-            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
             <span>Search catalog...</span>
           </button>
-          
+
           <a href="#account" class="mobile-account-card">
             <div class="mobile-account-avatar">
-              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.8" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
@@ -239,7 +230,8 @@
               <span class="mobile-account-name">My Account</span>
               <span class="mobile-account-desc">Sign in or view orders</span>
             </div>
-            <svg class="mobile-account-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="mobile-account-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+              stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </a>
@@ -251,7 +243,7 @@
           <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
           <li class="mobile-nav-item"><a href="shop.html" class="mobile-nav-link">Shop</a></li>
           <li class="mobile-nav-item"><a href="shop.html?category=deo" class="mobile-nav-link">Deodorant</a></li>
-          <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+          <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link active">About Us</a></li>
           <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Journal</a></li>
           <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
         </ul>
@@ -261,268 +253,183 @@
 
   <!-- Breadcrumb Bar -->
   <nav class="breadcrumb-container" aria-label="Breadcrumb">
-    <div class="checkout-wrapper">
+    <div class="about-wrapper">
       <ol class="breadcrumb-list">
         <li><a href="index.html">Home</a></li>
         <li><span class="bc-sep">/</span></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><span class="bc-sep">/</span></li>
-        <li aria-current="page" class="bc-active">Checkout</li>
+        <li aria-current="page" class="bc-active">About</li>
       </ol>
     </div>
   </nav>
 
-  <!-- Checkout Section -->
-  <section class="checkout-main-section">
-    <div class="checkout-wrapper">
-
-      <div class="checkout-hero-header">
-        <h1 class="checkout-title">Checkout</h1>
-      </div>
-
-      <div class="checkout-layout-grid">
-
-        <!-- Left Column: Shipping & Payment Form -->
-        <main class="checkout-form-col">
-
-          <form id="checkoutForm" novalidate>
-
-            <!-- Step 1: Contact Information -->
-            <div class="checkout-card-box">
-              <div class="checkout-card-header">
-                <span class="step-num">1</span>
-                <h3>Contact Details</h3>
-              </div>
-              <div class="form-group-grid">
-                <div class="input-field-wrap">
-                  <label for="contactEmail">Email Address (Optional for e-receipt)</label>
-                  <input type="email" id="contactEmail" placeholder="your.name@example.com" class="form-input">
-                </div>
-                <div class="input-field-wrap">
-                  <label for="contactPhone">Mobile Phone Number (For Courier SMS & COD Call) *</label>
-                  <input type="tel" id="contactPhone" placeholder="0300 1234567" class="form-input" required>
-                  <span class="input-error-msg" id="phoneErrorMsg">Please enter a valid Pakistani mobile number.</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 2: Shipping Address -->
-            <div class="checkout-card-box">
-              <div class="checkout-card-header">
-                <span class="step-num">2</span>
-                <h3>Delivery Address</h3>
-              </div>
-
-              <div class="form-group-grid">
-                <div class="input-field-wrap span-2">
-                  <label for="fullName">Full Name *</label>
-                  <input type="text" id="fullName" placeholder="e.g. Muhammad Ali Khan" class="form-input" required>
-                  <span class="input-error-msg" id="nameErrorMsg">Please enter your full name.</span>
-                </div>
-
-                <div class="input-field-wrap span-2">
-                  <label for="streetAddress">Street Address / House / Flat No. *</label>
-                  <input type="text" id="streetAddress" placeholder="House #, Block/Street, Area" class="form-input"
-                    required>
-                  <span class="input-error-msg" id="addressErrorMsg">Please enter your complete delivery address.</span>
-                </div>
-
-                <div class="input-field-wrap">
-                  <label for="citySelect">City *</label>
-                  <select id="citySelect" class="form-select" required>
-                    <option value="" disabled selected>Select Your City</option>
-                    <option value="karachi">Karachi</option>
-                    <option value="lahore">Lahore</option>
-                    <option value="islamabad">Islamabad</option>
-                    <option value="rawalpindi">Rawalpindi</option>
-                    <option value="faisalabad">Faisalabad</option>
-                    <option value="multan">Multan</option>
-                    <option value="peshawar">Peshawar</option>
-                    <option value="quetta">Quetta</option>
-                    <option value="sialkot">Sialkot</option>
-                    <option value="gujranwala">Gujranwala</option>
-                    <option value="other">Other Cities in Pakistan</option>
-                  </select>
-                </div>
-
-                <div class="input-field-wrap">
-                  <label for="postalCode">Postal Code (Optional)</label>
-                  <input type="text" id="postalCode" placeholder="e.g. 75500" class="form-input">
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 3: Payment Method -->
-            <div class="checkout-card-box">
-              <div class="checkout-card-header">
-                <span class="step-num">3</span>
-                <h3>Payment Method</h3>
-              </div>
-
-              <div class="payment-options-list">
-
-                <label class="payment-radio-card active">
-                  <input type="radio" name="paymentMethod" value="cod" checked>
-                  <span class="radio-custom-circle"></span>
-                  <div class="payment-card-content">
-                    <div class="payment-card-title-row">
-                      <span class="payment-card-name">Cash on Delivery (COD)</span>
-                      <span class="payment-badge-rec">Recommended</span>
-                    </div>
-                    <p class="payment-card-desc">Pay in cash directly to courier rider upon delivery at your doorstep.
-                    </p>
-                  </div>
-                </label>
-
-                <label class="payment-radio-card">
-                  <input type="radio" name="paymentMethod" value="card">
-                  <span class="radio-custom-circle"></span>
-                  <div class="payment-card-content">
-                    <div class="payment-card-title-row">
-                      <span class="payment-card-name">Credit / Debit Card</span>
-                      <div class="card-icons-inline">
-                        <span class="card-icon-pill">VISA</span>
-                        <span class="card-icon-pill">MasterCard</span>
-                      </div>
-                    </div>
-                    <p class="payment-card-desc">Secure 256-bit encrypted online card processing.</p>
-                  </div>
-                </label>
-
-              </div>
-            </div>
-
-            <!-- Complete Order Button -->
-            <button type="submit" class="btn-primary btn-submit-order" id="submitOrderBtn">
-              <span>Complete Order (Cash on Delivery)</span>
-              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-
-          </form>
-
-        </main>
-
-        <!-- Right Column: Order Summary Card -->
-        <aside class="checkout-summary-col" aria-label="Order Summary">
-          <div class="summary-card-box">
-            <h3 class="summary-title">Order Summary</h3>
-
-            <!-- Item List -->
-            <div class="summary-items-list">
-              <div class="summary-item-card">
-                <div class="summary-item-thumb">
-                  <img src="assets/images/best_sellers.jpg" alt="Creed Aventus Perfume Bottle Showcase">
-                  <span class="summary-qty-badge">1</span>
-                </div>
-                <div class="summary-item-info">
-                  <h4 class="summary-item-title">CREED Aventus Eau De Parfum</h4>
-                  <span class="summary-item-meta">100ml Bottle</span>
-                </div>
-                <span class="summary-item-price">Rs. 130,900</span>
-              </div>
-            </div>
-
-            <!-- Coupon Code Section -->
-            <div class="coupon-box-wrap">
-              <div class="coupon-input-group">
-                <input type="text" id="couponInput" placeholder="Discount Code (e.g. LUXURY10)" class="coupon-input">
-                <button type="button" class="btn-coupon-apply" id="applyCouponBtn">Apply</button>
-              </div>
-              <span class="coupon-feedback-msg" id="couponFeedback"></span>
-            </div>
-
-            <div class="summary-divider"></div>
-
-            <!-- Cost Calculation Table -->
-            <div class="cost-table">
-              <div class="cost-row">
-                <span>Subtotal</span>
-                <span id="subtotalVal">Rs. 130,900</span>
-              </div>
-              <div class="cost-row">
-                <span>Standard Delivery</span>
-                <span class="free-delivery-text">FREE</span>
-              </div>
-              <div class="cost-row discount-row" id="discountRow" style="display: none;">
-                <span>Coupon Discount (10%)</span>
-                <span class="discount-val" id="discountVal">- Rs. 13,090</span>
-              </div>
-              <div class="summary-divider"></div>
-              <div class="cost-row total-row">
-                <span>Grand Total</span>
-                <span class="total-val" id="grandTotalVal">Rs. 130,900</span>
-              </div>
-            </div>
-
-            <div class="checkout-trust-box">
-              <div class="trust-pill-item">
-                <svg viewBox="0 0 24 24" width="16" height="16" stroke="#4ade80" stroke-width="2" fill="none">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-                <span>100% Authentic Genuine Scent</span>
-              </div>
-              <div class="trust-pill-item">
-                <svg viewBox="0 0 24 24" width="16" height="16" stroke="#e58cff" stroke-width="2" fill="none">
-                  <rect x="1" y="3" width="15" height="13" />
-                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-                  <circle cx="5.5" cy="18.5" r="2.5" />
-                  <circle cx="18.5" cy="18.5" r="2.5" />
-                </svg>
-                <span>Free Express Delivery (2-3 Days)</span>
-              </div>
-            </div>
-
-          </div>
-        </aside>
-
+  <!-- Hero Section -->
+  <section class="about-hero-section">
+    <div class="hero-watermark">HERITAGE</div>
+    <div class="hero-bg-glow"></div>
+    <div class="about-wrapper">
+      <div class="about-hero-content">
+        <span class="about-badge">The Imperial Vault</span>
+        <h1 class="about-hero-title">Crafted For Distinction</h1>
+        <p class="about-hero-desc">
+          Perfume Daddy was founded with a singular conviction: to connect Pakistan's fragrance lovers directly with
+          100% authentic niche EDPs, legendary Middle Eastern houses, and pure distilled oriental attars.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Instant Order Confirmation Success Modal -->
-  <div class="modal-overlay" id="orderSuccessModal">
-    <div class="order-success-card">
-
-      <div class="success-icon-wrap">
-        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#ffffff" stroke-width="3" fill="none"
-          stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-      </div>
-
-      <span class="success-tag">Order Confirmed</span>
-      <h2 class="success-title">Thank You For Your Order!</h2>
-      <p class="success-desc">
-        Your Cash on Delivery order has been successfully placed. Our dispatch team is preparing your package.
-      </p>
-
-      <div class="order-details-box">
-        <div class="detail-row">
-          <span>Order Reference:</span>
-          <strong id="modalOrderRef">#PD-98421</strong>
+  <!-- Story & Craftsmanship Section -->
+  <section class="about-story-section">
+    <div class="about-wrapper">
+      <div class="about-story-grid">
+        <div class="about-visual-column">
+          <div class="about-image-card">
+            <img src="assets/images/hero_perfumes.jpg"
+              alt="Artisanal perfume bottles on slate pedestals showcasing European fragrance imports"
+              class="about-img">
+            <div class="about-image-tag">Direct European Import</div>
+          </div>
         </div>
-        <div class="detail-row">
-          <span>Payment Method:</span>
-          <strong>Cash on Delivery (COD)</strong>
-        </div>
-        <div class="detail-row">
-          <span>Estimated Delivery:</span>
-          <strong>2–3 Working Days</strong>
-        </div>
-        <div class="detail-row">
-          <span>Total Amount:</span>
-          <strong class="highlight-price" id="modalOrderTotal">Rs. 130,900</strong>
+
+        <div class="about-text-column">
+          <span class="about-subheading">Our Philosophy</span>
+          <h2 class="about-heading">Uncompromising Authenticity In Every Drop</h2>
+          <p class="about-paragraph">
+            The fragrance world is flooded with diluted clones and grey-market imitations. At Perfume Daddy, we reject
+            shortcuts. Every bottle in our vault is sourced directly from certified European distributors and Middle
+            Eastern perfumery houses including Creed, Dior, Lattafa, Rasasi, Armaf, and Afnan.
+          </p>
+          <p class="about-paragraph">
+            We store our entire collection in temperature-controlled dark vaults to preserve subtle top notes and ensure
+            your fragrance performs exactly as the master perfumer intended.
+          </p>
+
+          <div class="about-quote-box">
+            <p class="quote-text">"Fragrance is the invisible signature of character. It precedes your arrival and
+              lingers long after you leave."</p>
+            <span class="quote-author">— Perfume Daddy Master Curator</span>
+          </div>
         </div>
       </div>
-
-      <a href="shop.html" class="btn-primary btn-modal-done">Continue Shopping</a>
-
     </div>
-  </div>
+  </section>
+
+  <!-- Authenticity Pillars Grid Section -->
+  <section class="about-pillars-section">
+    <div class="about-wrapper">
+      <div class="section-header-center">
+        <span class="about-subheading">Why Trust Us</span>
+        <h2 class="about-heading">The Four Pillars Of The Vault</h2>
+        <div class="title-accent-bar-center"></div>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.8" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <h3 class="pillar-title">100% Genuine Guarantee</h3>
+          <p class="pillar-desc">Every bottle comes factory sealed with verifiable batch codes. If you ever receive a
+            non-authentic item, we offer an instant 200% refund.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.8" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13" rx="2"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Express COD Nationwide</h3>
+          <p class="pillar-desc">Cash on Delivery across Karachi, Lahore, Islamabad, Rawalpindi, and 120+ cities with
+            safe shockproof luxury packaging.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.8" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Cold Vault Preservation</h3>
+          <p class="pillar-desc">Stored at strict 18°C temperature and 45% humidity in dark climate vaults to maintain
+            volatile top notes and maximum sillage.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.8" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Curated Concierge</h3>
+          <p class="pillar-desc">Unsure which scent profile suits your personality? Our fragrance specialists offer
+            personal recommendations via WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Counter Card Section -->
+  <section class="about-stats-section">
+    <div class="about-wrapper">
+      <div class="about-stats-box">
+        <div class="stat-item">
+          <span class="stat-number">2,400+</span>
+          <span class="stat-label">Discerning Clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Authentic Bottlings</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">24–48h</span>
+          <span class="stat-label">Delivery Nationwide</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">4.9 ★</span>
+          <span class="stat-label">Customer Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="about-cta-section">
+    <div class="about-wrapper">
+      <div class="about-cta-card">
+        <h2 class="about-cta-title">Explore The Reserve Scent Vault</h2>
+        <p class="about-cta-desc">Discover Pakistan's finest collection of niche EDPs, Arabian attars, and luxury gift
+          sets with Cash on Delivery.</p>
+        <a href="shop.html" class="btn-luxury-primary">
+          <span>Start Shopping</span>
+          <svg class="cta-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2"
+            fill="none">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- Luxury Footer -->
   <footer class="luxury-footer">
@@ -584,6 +491,7 @@
       <div class="footer-links-column">
         <h4 class="footer-column-heading">The House</h4>
         <ul class="footer-links-list">
+          <li><a href="about.html" class="footer-link">Our Heritage & Story</a></li>
           <li><a href="shop.html" class="footer-link">Our Vault</a></li>
           <li><a href="index.html#hot-list" class="footer-link">Featured Releases</a></li>
           <li><a href="index.html#journal" class="footer-link">The Journal</a></li>

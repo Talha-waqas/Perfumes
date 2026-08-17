@@ -531,5 +531,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Contact Form Submission Handler
+  const contactInquiryForm = document.getElementById('contactInquiryForm');
+  if (contactInquiryForm) {
+    contactInquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('contactName')?.value || 'Valued Client';
+      alert(`Thank you, ${name}! Your inquiry has been received by our Master Curator. We will reply within 24 hours.`);
+      contactInquiryForm.reset();
+    });
+  }
 });
 
